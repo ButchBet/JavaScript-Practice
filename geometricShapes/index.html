@@ -5,9 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometric shapes</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Geometric Shapes</h1>
-    <script src="./geometricShapes.js"></script>
+    <header>
+        <h1>Geometric Shapes</h1>
+    </header>
+
+    <nav>
+        <ul id="shapes">
+            <li id="squareIcon"><i class="glyphicon glyphicon-unchecked" title="Square"></i></li>
+
+            <li id="triangleIcon"><i class="glyphicon glyphicon-triangle-top" title="Triangle"></i></li>
+
+            <li id="circleIcon"><i class="glyphicon glyphicon-globe" title="Circle"></i></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="description">
+            <h3 id="name">Shape</h3>
+
+            <p id="meaning">A shape or figure is the form of an object or its external boundary, outline, or external surface, as opposed to other properties such as color, texture, or material type. A plane shape, two-dimensional shape, or 2D shape is constrained to lie on a plane, in contrast to solid figures.</p>
+        </section>
+
+        <section id="canculation">
+            <section id="input">
+                <form action="#">
+                    Here we have the shape input (Component)
+                </form>
+            </section>
+
+            <section id="output">
+                Here we have the calculation output (Component)
+            </section>
+        </section>
+    </main>
+    
+    <script src="./index.js"></script>
 </body>
 </html>
