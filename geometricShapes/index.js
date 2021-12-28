@@ -1,70 +1,75 @@
-// Square code
-console.group("Square")
-const side = 5;
+class AppElement extends HTMLElement {
+    constructor() {
+        super();
+        this.attachShadow({mode: "open"});
+        this.render();
+    }
 
-function SquarePerimeter(side = 4) {
-    return  side * 4 ;
+    render() {
+        this.connectedCallback();
+    }
+
+    connectedCallback() {
+        this.shadowRoot.innerHTML = `
+        <style> 
+        </style>
+
+        <link rel="stylesheet" href="./index.css">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> 
+        
+        <section class="container-md">
+            <header class="text-center">
+                <h1>Geometric Shapes</h1>
+            </header>
+        
+
+            <nav class="row mx-0">
+                <div class="col-sm-4 d-flex justify-content-center"><img src="./asets/square.png" class="Square" title="Square"></img></div>
+
+                <div class="col-sm-4 d-flex justify-content-center"><img src="./asets/triangle.png" class="Triangle" title="Triangle"></img></div>
+
+                <div class="col-sm-4 d-flex justify-content-center"><img src="./asets/circle.png" class="Circle" title="Circle"></img></div>
+            </nav>
+        
+            <main class="row mx-0">
+                <section id="description" class="col-sm-6">
+                    <section class="info">
+                        <p class="h3" id="name">Shape</p>
+            
+                        <p id="meaning">A shape or figure is the form of an object or its external boundary, outline, or external surface, as opposed to other properties such as color, texture, or material type. A plane shape, two-dimensional shape, or 2D shape is constrained to lie on a plane, in contrast to solid figures.</p>            
+                    </section>
+
+                    <!-- <section class="images row">
+                        <img class="col-sm-4"src="./asets/square.png" alt="Square">
+                        <img class="col-sm-4"src="./asets/triangle.png" alt="Triangle">
+                        <img class="col-sm-4"src="./asets/circle.png" alt="Circle">
+                    </section> -->
+                </section>
+        
+                <section id="canculation" class="col-sm-6">
+                    <section id="input">
+                        <form action="#">
+                            <p  class="h3" for="">Input</p> <br>
+                            <p>In computer science, the general meaning of input is to provide or give something to the computer, in other words, when a computer or device is receiving a command or signal from outer sources, the event is referred to as input to the device.</p>
+                        </form>
+                    </section>
+        
+                    <section id="output">
+                        <p class="h3">Output</p>
+                        <p>Any information that is processed by and sent out from a computer or other electronic device is considered output. An example of output is anything viewed on your computer monitor screen, such as the words you type on your keyboard</p>
+                    </section>
+                </section>
+            </main>
+        </section>
+      `;
+    }
 }
 
-console.log("The square perimeter: " + SquarePerimeter(side));
-
-function SquareArea(side) {
-   
-    return side**2;
-}
-console.log("The square area: " + SquareArea(side) + "cm^2");
-console.groupEnd();
-
-// Triangle code
-console.group("Triangle");
-const height = 5
-const side1 = 6;
-const side2 = 6;
-const base = 6;
-// console.log("Triangle sides are: (" 
-//     + TraingleSide1 
-//     + " " 
-//     + TraingleSide2 
-//     + " " 
-//     + TraingleSide3 
-//     + ")cm");
-
-function TrainglePerimeter(side1 = 4, side2 = 6, base = 5) {
-    return  side1 + side2 + base;
-} 
-
-console.log("The triangle perimeter: " + TrainglePerimeter(side1, side2, base) + "cm");
-
-function TriangleArea(base, height) {
-    return (base * height) / 2;
-}
-
-console.log("The square area: " + TriangleArea(base, height) + "cm^2");
-console.groupEnd();
-
-
-// Circle code
-console.group("Circle")
-const radio = 4;
-const PI = Math.PI;
-
-console.log("The circle radio: " + radio + "cm");
-
-function diameter(radio = 4) {
-    return radio * 2;
-}
-
-console.log("The circle diameter: " + diameter(radio) + "cm");
-
-function CirclePerimeter(diameter = 8, PI = 3.1415) { 
-    return  diameter * PI;
-}
-
-console.log("The circle perimeter: " + CirclePerimeter(diameter(radio), PI) + "cm");
-
-function CircleArea(PI = 3.1415, radio = 4) {
-    return PI * (radio**2);
-}
-
-console.log("The circle area: " + CircleArea(PI, radio) + "cm^2");
-console.groupEnd();
+customElements.define("app-element", AppElement);

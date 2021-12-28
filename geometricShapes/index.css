@@ -1,4 +1,4 @@
-body {
+:host {
     --mist : #90AFC5;
     --stone : #336B87;
     --shadow : #2A3132;
@@ -25,27 +25,26 @@ h1 {
     align-content: center;
 }
 
-
 nav {
-    /* background-color: white; */
-    /* height: 8em; */
-    /* margin: 0 !important; */
-} 
 
-nav .glyphicon {
-    font-size: 64px;
-    top: calc(50% - 32px) !important;
 }
 
-nav i {
+nav div {
+    height: 100%;
+}
+
+nav div img {
+    /* width: 64px; */
+    width: 64px;
+    height: 64px;
     cursor: pointer;
 }
 
-nav i:hover {
+nav div img:hover {
     opacity: .8;
 }
 
-nav i:active {
+nav div img:active {
     transform: scale(.9);
 }
 
@@ -53,12 +52,6 @@ header,
 nav {
     margin-bottom: 10px;
 }
-
-/* nav i:nth-child(1),
-nav i:nth-child(2) {
-    margin-right: 50px !important;
-} */
-
 
 main {
     background-color: var(--mist);
@@ -70,8 +63,6 @@ main > section {
     width: 24em;
 }
 
- {
-}
 
 #description {
     background-color: var(--stone);
