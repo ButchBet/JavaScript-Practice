@@ -1,5 +1,89 @@
+body {
+    --mist : #90AFC5;
+    --stone : #336B87;
+    --shadow : #2A3132;
+    --autumn-follage : #763626;
+
+    color: black !important;
+    background-color: var(--mist) !important;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+}
+
+header {
+    background-color: var(--shadow);
+    height: 6em;
+}
+
+h1 {
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
 
 
-#shapes li .glyphicon {
+nav {
+    /* background-color: white; */
+    /* height: 8em; */
+    /* margin: 0 !important; */
+} 
+
+nav .glyphicon {
     font-size: 64px;
+    top: calc(50% - 32px) !important;
+}
+
+nav i {
+    cursor: pointer;
+}
+
+nav i:hover {
+    opacity: .8;
+}
+
+nav i:active {
+    transform: scale(.9);
+}
+
+header,
+nav {
+    margin-bottom: 10px;
+}
+
+/* nav i:nth-child(1),
+nav i:nth-child(2) {
+    margin-right: 50px !important;
+} */
+
+
+main {
+    background-color: var(--mist);
+}
+
+main > section {
+    border: .5px solid black;
+    
+    width: 24em;
+}
+
+ {
+}
+
+#description {
+    background-color: var(--stone);
+}
+
+#canculation {
+    background-color: var(--stone);
+}
+
+@media screen and (max-widht: 579px){
+    main .images .col-sm-4 {
+        width: 101px !important;
+        height: 101px !important;
+    }
 }
