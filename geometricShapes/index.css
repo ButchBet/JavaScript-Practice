@@ -1,0 +1,21 @@
+body {
+    --mist : #90AFC5;
+    --stone : #336B87;
+    --shadow : #2A3132;
+    --autumn-follage : #763626;
+
+    color: black !important;
+    background-color: var(--mist) !important;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    text-align: justify !important;
+    
+}
+
+/* #mainCont {
+    background-color: var(--stone);
+    min-height: 70vh;
+} */
+
