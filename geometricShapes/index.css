@@ -1,4 +1,4 @@
-:host {
+body {
     --mist : #90AFC5;
     --stone : #336B87;
     --shadow : #2A3132;
@@ -10,71 +10,12 @@
     display: flex;
     flex-flow: row wrap;
     align-content: center;
-}
-
-header {
-    background-color: var(--shadow);
-    height: 6em;
-}
-
-h1 {
-    height: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-nav {
-
-}
-
-nav div {
-    height: 100%;
-}
-
-nav div img {
-    /* width: 64px; */
-    width: 64px;
-    height: 64px;
-    cursor: pointer;
-}
-
-nav div img:hover {
-    opacity: .8;
-}
-
-nav div img:active {
-    transform: scale(.9);
-}
-
-header,
-nav {
-    margin-bottom: 10px;
-}
-
-main {
-    background-color: var(--mist);
-}
-
-main > section {
-    border: .5px solid black;
+    text-align: justify !important;
     
-    width: 24em;
 }
 
-
-#description {
+/* #mainCont {
     background-color: var(--stone);
-}
+    min-height: 70vh;
+} */
 
-#canculation {
-    background-color: var(--stone);
-}
-
-@media screen and (max-widht: 579px){
-    main .images .col-sm-4 {
-        width: 101px !important;
-        height: 101px !important;
-    }
-}
