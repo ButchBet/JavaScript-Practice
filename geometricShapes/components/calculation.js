@@ -12,10 +12,16 @@ class Calculation extends HTMLElement {
         this.squareStatus = false;
         this.triangleStatus  = false;
         this.circleStatus  = false;
+        this.shapeStatus  = true;
 
-        this._square;
-        this._triangle;
-        this._circle;
+        // Shape components triangle
+        this.squareTemp = "<app-square></app-square>";
+        this.triangleTemp = "<app-triangle></app-triangle>";
+        this.circleTemp = "<app-circle></app-circle>";
+        this.shapeTemp = "<app-shape></app-shape>";
+
+        // change tag
+        this.tag = this.shapeTemp;
     }
 
     static get styles() {
@@ -64,12 +70,25 @@ class Calculation extends HTMLElement {
         `;
     }
 
-    SquareClicked(e) {
-        // if(this.square) {
-        //     // Change quare componet to welcome component
-            
-        // }
-        console.log("Hello from square");
+    SquareClicked(root) {
+        console.log(root);
+        // const change = root;
+
+        // Insert the square component
+        // Change the square and shape status
+        if(this.squareStatus) {
+            root.innerHTML = this.shapeTemp;
+
+            this.shapeStatus = false;
+            this.triangleStatus = false;
+            this.circleTemp = false;
+            this.squareStatus = true;
+        } else {
+            root.innerHTML = this.squareTemp;
+
+            this.shapeStatus = true;
+            this.squareTemp = false;
+        }
     }
 
     TriangleClicked() {
@@ -88,19 +107,32 @@ class Calculation extends HTMLElement {
         this.triangle = this.shadowRoot.getElementById("Triangle");
         this.circle = this.shadowRoot.getElementById("Circle");
 
-        // Initialize main valiabels shape
-        this._square = this.square;
-        this._triangle = this.triangle;
-        this._circle = this.circle;
+        this.square.addEventListener("click", () => {
+            if(this.squareStatus) {
+                this.tag = this.shapeTemp;
+    
+                this.shapeStatus = true;
+                this.triangleStatus = false;
+                this.circleTemp = false;
+                this.squareStatus = false;
+            } else {
+                this.tag = this.squareTemp;
+    
+                this.shapeStatus = true;
+                this.squareTemp = false;
+            }
 
-        // console.log(this.square, this.triangle, this.circle);
-
-        this.square.onpointerdown = this.SquareClicked;
+            this.connectedCallback();
+        });
         this.triangle.onpointerdown = this.TriangleClicked;
         this.circle.onpointerdown = this.CircleClicked;
     }
 
     disconnectedCallback() {}
+
+    reLoad() {
+        this.render();
+    }
 
     render() {
         this.shadowRoot.innerHTML = `
@@ -125,8 +157,9 @@ class Calculation extends HTMLElement {
                 <div class="col-sm-4 d-flex justify-content-center"><img src="./asets/circle.png" class="Circle" id="Circle" title="Circle"></img></div>
             </nav>
             
-            <div id="change"><app-circle></app-circle><div>
+            <div id="change">${this.tag}<div>
       `;
+
     }
 }
 
