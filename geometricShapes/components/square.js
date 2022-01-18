@@ -3,14 +3,14 @@ class Square extends HTMLElement {
         super();
 
         this.attachShadow({mode: "open"});
-        
-        this.side = 0;
+
+        this.output = "Any information that is processed by and sent out from a computer or other electronic device is considered output. An example of output is anything viewed on your computer monitor screen, such as the words you type on your keyboard";
     }
 
     static get styles() {
         return `
             main {
-                background-color: var(--mist);
+                background-color: red;
             }
             
             main > section {
@@ -26,22 +26,66 @@ class Square extends HTMLElement {
             #canculation {
                 background-color: var(--stone);
             }
+
+            // #input {
+            //     background: red;
+            // }
+
+            .formElem {
+                width: 100%;
+                height: 40px;
+            }
+
+            #Perimeter,
+            #Area {
+                background: var(--shadow) !important;
+                border: 1px solid white !important;
+                color: white;
+            }
+
+            #Perimeter:hover,
+            #Area:hover {
+                opacity: .8;
+            }
+
+            #Perimeter:active,
+            #Area:active {
+                transform: scale(.99);
+            }
+
+            #Side,
+            #Perimeter {
+                margin-bottom: 8px !important;
+            }
         `;
-    }
-
-    SquarePerimeter() {
-        return  this.side * 4 ;
-    }
-
-    SquareArea() {
-        return this.side**2;
     }
 
     connectedCallback() {
         this.render();
+
+        this.perimeter = this.shadowRoot.getElementById("Perimeter");
+        this.area = this.shadowRoot.getElementById("Area");
+        this.side = this.shadowRoot.getElementById("Side");
+
+        this.perimeter.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            this.output = `The perimeter is: ${this.side.value * 4} ut`;
+
+            this.connectedCallback();
+        });
+
+        this.area.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            this.output = `The area is: ${this.side.value**2} ut^2`;
+
+            this.connectedCallback();
+        });
     }
 
-    disconnectedCallback() {}
+    disconnectedCallback() {
+    }
 
     render() {
         this.shadowRoot.innerHTML = `
@@ -70,22 +114,19 @@ class Square extends HTMLElement {
 
                 <section id="canculation" class="col-sm-6">
                     <section id="input">
-                        <form action="#">
-                            <p  class="h3" for="">Input</p> <br>
-                            <label for="side">
-                                Side
-                                <input type="number" name="side" id="side">
-                            </label>
+                        <form action="#" class="">
+                            <p  class="formElem h3" for="">Input</p>
+                            <input min="0" placeholder="Side" type="number" name="side" class=" formElem" id="Side">
                             
-                            <input type="submit" value="Perimetro" name="side" id="side">
+                            <input type="submit" value="Perimetro" name="side" class="btn formElem" id="Perimeter">
 
-                            <input type="submit" value="Area" name="side" id="side">
+                            <input type="submit" value="Area" name="side" class="btn formElem" id="Area">
                         </form>
                     </section>
 
                     <section id="">
                         <p class="h3">Output</p>
-                        <p id="output">Any information that is processed by and sent out from a computer or other electronic device is considered output. An example of output is anything viewed on your computer monitor screen, such as the words you type on your keyboard</p>
+                        <p id="output">${this.output}</p>
                     </section>
                 </section>
             </main>

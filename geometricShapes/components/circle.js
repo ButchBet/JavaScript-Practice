@@ -2,8 +2,9 @@ class Circle extends HTMLElement {
     constructor() {
         super();
 
-        this.radio = 0;
         this.PI = Math.PI;
+
+        this.output = "Any information that is processed by and sent out from a computer or other electronic device is considered output. An example of output is anything viewed on your computer monitor screen, such as the words you type on your keyboard";
 
         this.attachShadow({mode : "open"});
     }
@@ -27,26 +28,69 @@ class Circle extends HTMLElement {
             #canculation {
                 background-color: var(--stone);
             }
+
+            .formElem {
+                width: 100%;
+                height: 40px;
+            }
+
+            #Perimeter,
+            #Area {
+                background: var(--shadow) !important;
+                border: 1px solid white !important;
+                color: white;
+            }
+
+            #Perimeter:hover,
+            #Area:hover {
+                opacity: .8;
+            }
+
+            #Perimeter:active,
+            #Area:active {
+                transform: scale(.99);
+            }
+
+            #Radio,
+            #Perimeter {
+                margin-bottom: 8px !important;
+            }
         `;
-    }
-
-    diameter() {
-        return this.radio * 2;
-    }
-
-    CirclePerimeter() { 
-        return  this.diameter * PI;
-    }
-
-    CircleArea() {
-        return this.PI * (this.radio**2);
     }
 
     connectedCallback() {
         this.render();
+
+        // Inputs
+        this.radio = this.shadowRoot.getElementById("Radio");
+
+        // Buttons
+        this.perimeter = this.shadowRoot.getElementById("Perimeter");
+        this.area = this.shadowRoot.getElementById("Area");
+
+        this.perimeter.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            let result = this.radio.value * 2 * this.PI;
+
+            this.output = `The perimeter is: ${result} ut.`;
+
+            this.connectedCallback();
+        });
+
+        this.area.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            let result = this.PI * (this.radio.value**2);
+
+            this.output = `The area is: ${result} ut^2.`;
+
+            this.connectedCallback();
+        });
     }
 
-    disconnectedCallback() {}
+    disconnectedCallback() {
+    }
 
     render() {
         this.shadowRoot.innerHTML = `
@@ -76,21 +120,18 @@ class Circle extends HTMLElement {
                 <section id="canculation" class="col-sm-6">
                     <section id="input">
                         <form action="#">
-                            <p  class="h3" for="">Input</p> <br>
-                            <label for="radio">
-                                Radio
-                                <input type="number" name="radio" id="radio">
-                            </label>
+                            <p  class="formElem h3" for="">Input</p>
+                            <input min="0" placeholder="Radio" type="number" name="radio" id="Radio" class="formElem">
                             
-                            <input type="submit" value="Perimetro" name="side" id="side">
+                            <input type="submit" value="Perimetro" name="side" id="Perimeter" class="formElem">
 
-                            <input type="submit" value="Area" name="side" id="side">
+                            <input type="submit" value="Area" name="side" id="Area" class="formElem">
                         </form>
                     </section>
 
                     <section id="">
                         <p class="h3">Output</p>
-                        <p id="output">Any information that is processed by and sent out from a computer or other electronic device is considered output. An example of output is anything viewed on your computer monitor screen, such as the words you type on your keyboard</p>
+                        <p id="output">${this.output}</p>
                     </section>
                 </section>
             </main>

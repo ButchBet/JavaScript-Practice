@@ -7,15 +7,14 @@ body {
     color: black !important;
     background-color: var(--mist) !important;
     height: 100vh;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
     text-align: justify !important;
-    
 }
 
-/* #mainCont {
-    background-color: var(--stone);
-    min-height: 70vh;
-} */
+#mainCont {
+    height: 100%;
+    /* display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center; */
+}
 
