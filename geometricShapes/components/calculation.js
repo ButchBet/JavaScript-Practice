@@ -67,36 +67,11 @@ class Calculation extends HTMLElement {
                     height: 101px !important;
                 }
             }
+
+            #change {
+                height: 6em !important;
+            }
         `;
-    }
-
-    SquareClicked(root) {
-        console.log(root);
-        // const change = root;
-
-        // Insert the square component
-        // Change the square and shape status
-        if(this.squareStatus) {
-            root.innerHTML = this.shapeTemp;
-
-            this.shapeStatus = false;
-            this.triangleStatus = false;
-            this.circleTemp = false;
-            this.squareStatus = true;
-        } else {
-            root.innerHTML = this.squareTemp;
-
-            this.shapeStatus = true;
-            this.squareTemp = false;
-        }
-    }
-
-    TriangleClicked() {
-        console.log("Hello from triangel");
-    }
-
-    CircleClicked() {
-        console.log("Hello from circle");
     }
 
     connectedCallback() {
@@ -112,27 +87,57 @@ class Calculation extends HTMLElement {
                 this.tag = this.shapeTemp;
     
                 this.shapeStatus = true;
-                this.triangleStatus = false;
-                this.circleTemp = false;
                 this.squareStatus = false;
             } else {
                 this.tag = this.squareTemp;
     
-                this.shapeStatus = true;
-                this.squareTemp = false;
+                this.squareStatus = true;
+                this.shapeStatus = false;
+                this.triangleStatus = false;
+                this.circleStatus = false;
             }
 
             this.connectedCallback();
         });
-        this.triangle.onpointerdown = this.TriangleClicked;
-        this.circle.onpointerdown = this.CircleClicked;
+
+        this.triangle.addEventListener("click", () => {
+            if(this.triangleStatus) {
+                this.tag = this.shapeTemp;
+    
+                this.shapeStatus = true;
+                this.triangleStatus = false;
+            } else {
+                this.tag = this.triangleTemp;
+    
+                this.triangleStatus = true;
+                this.shapeStatus = false;
+                this.squareStatus = false;
+                this.circleStatus = false;
+            }
+
+            this.connectedCallback();
+        });
+
+        this.circle.addEventListener("click", () => {
+            if(this.circleStatus) {
+                this.tag = this.shapeTemp;
+    
+                this.shapeStatus = true;
+                this.circleStatus = false;
+            } else {
+                this.tag = this.circleTemp;
+    
+                this.circleStatus = true;
+                this.shapeStatus = false;
+                this.squareStatus = false;
+                this.triangleStatus = false;
+            }
+
+            this.connectedCallback();
+        });
     }
 
     disconnectedCallback() {}
-
-    reLoad() {
-        this.render();
-    }
 
     render() {
         this.shadowRoot.innerHTML = `

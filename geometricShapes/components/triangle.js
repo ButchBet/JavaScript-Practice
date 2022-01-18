@@ -2,10 +2,7 @@ class Triangle extends HTMLElement {
     constructor() {
         super();
 
-        this.height = 0;
-        this.side1 = 0;
-        this.side2 = 0;
-        this.base = 0;
+        this.output = "Any information that is processed by and sent out from a computer or other electronic device is considered output. An example of output is anything viewed on your computer monitor screen, such as the words you type on your keyboard";
 
         this.attachShadow({mode : "open"});
     }
@@ -29,22 +26,72 @@ class Triangle extends HTMLElement {
             #canculation {
                 background-color: var(--stone);
             }
-        `;
-    }
-    
-    TrainglePerimeter() {
-        return  this.side1 + this.side2 + this.base;
-    }
 
-    TriangleArea() {
-        return (this.base * this.height) / 2;
+            .formElem {
+                width: 100%;
+                height: 40px;
+            }
+
+            #Perimeter,
+            #Area {
+                background: var(--shadow) !important;
+                border: 1px solid white !important;
+                color: white;
+            }
+
+            #Perimeter:hover,
+            #Area:hover {
+                opacity: .8;
+            }
+
+            #Perimeter:active,
+            #Area:active {
+                transform: scale(.99);
+            }
+
+            #base,
+            #Perimeter {
+                margin-bottom: 8px !important;
+            }
+        `;
     }
 
     connectedCallback() {
         this.render();
+
+        //Inputs
+        this.height = this.shadowRoot.getElementById("height");
+        this.side1 = this.shadowRoot.getElementById("side1");
+        this.side2 = this.shadowRoot.getElementById("side2");
+        this.base = this.shadowRoot.getElementById("base");
+
+        // Buttons
+        this.perimeter = this.shadowRoot.getElementById("Perimeter");
+        this.area = this.shadowRoot.getElementById("Area");
+
+        this.perimeter.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            let result = (this.base.value * 1)  + (this.side1.value * 1) + (this.side2.value * 1);
+
+            this.output = `The perimeter is: ${result} ut`
+
+            this.connectedCallback();
+        });
+
+        this.area.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            let result = ((this.base.value * 1) * (this.height.value * 1)) / 2;
+
+            this.output = `The area is: ${result} ut^2`
+
+            this.connectedCallback();
+        });
     }
 
-    disconnectedCallback() {}
+    disconnectedCallback() {
+    }
 
     render() {
         this.shadowRoot.innerHTML = `
@@ -74,36 +121,26 @@ class Triangle extends HTMLElement {
                 <section id="canculation" class="col-sm-6">
                     <section id="input">
                         <form action="#">
-                            <p  class="h3" for="">Input</p> <br>
-                            <label for="height">
-                                Height
-                                <input type="number" name="height" id="height">
-                            </label>
-
-                            <label for="side1">
-                                Side 1
-                                <input type="number" name="side1" id="side1">
-                            </label>
-
-                            <label for="side2">
-                                Side 2
-                                <input type="number" name="side2" id="side">
-                            </label>
-
-                            <label for="base">
-                                Base
-                                <input type="number" name="base" id="base">
-                            </label>
+                            <p  class="formElem h3" for="">Input</p>
+    
+                            <input min="0" placeholder="Height" type="number" name="height" id="height" class="formElem">
                             
-                            <input type="submit" value="Perimetro" name="side" id="side">
+                            <input min="0" placeholder="Side 1" type="number" name="side1" id="side1" class="formElem">
 
-                            <input type="submit" value="Area" name="side" id="side">
+                            
+                            <input min="0" placeholder="Side 2" type="number" name="side2" id="side2" class="formElem">
+                            
+                            <input min="0" placeholder="Base" type="number" name="base" id="base" class="formElem">
+                            
+                            <input type="submit" value="Perimetro" name="side" id="Perimeter" class="formElem">
+
+                            <input type="submit" value="Area" name="side" id="Area" class="formElem">
                         </form>
                     </section>
 
                     <section id="">
                         <p class="h3">Output</p>
-                        <p id="output">Any information that is processed by and sent out from a computer or other electronic device is considered output. An example of output is anything viewed on your computer monitor screen, such as the words you type on your keyboard</p>
+                        <p id="output">${this.output}</p>
                     </section>
                 </section>
             </main>
