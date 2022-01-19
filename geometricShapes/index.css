@@ -6,15 +6,17 @@ body {
 
     color: black !important;
     background-color: var(--mist) !important;
-    height: 100vh;
     text-align: justify !important;
+    height: 100vh;
 }
 
 #mainCont {
-    height: 100%;
-    /* display: flex;
-    flex-flow: column wrap;
+    height: 40rem;
+    max-height: 100rem;
+    max-width: 60rem;
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center;
-    align-content: center; */
+    align-content: center;
 }
 

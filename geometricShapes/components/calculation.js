@@ -60,13 +60,6 @@ class Calculation extends HTMLElement {
             nav {
                 margin-bottom: 10px;
             }
-            
-            @media screen and (max-widht: 579px){
-                main .images .col-sm-4 {
-                    width: 101px !important;
-                    height: 101px !important;
-                }
-            }
 
             #change {
                 height: 6em !important;
@@ -155,11 +148,11 @@ class Calculation extends HTMLElement {
             
 
             <nav class="row mx-0">
-                <div class="col-sm-4 d-flex justify-content-center"><img src="./asets/square.png" class="Square" id="Square" title="Square"</img></div>
+                <div class="col-sm-4 d-flex justify-content-center"><img src="./assets/square.png" class="Square" id="Square" title="Square"</img></div>
 
-                <div class="col-sm-4 d-flex justify-content-center"><img src="./asets/triangle.png" class="Triangle" id="Triangle" title="Triangle"></img></div>
+                <div class="col-sm-4 d-flex justify-content-center"><img src="./assets/triangle.png" class="Triangle" id="Triangle" title="Triangle"></img></div>
 
-                <div class="col-sm-4 d-flex justify-content-center"><img src="./asets/circle.png" class="Circle" id="Circle" title="Circle"></img></div>
+                <div class="col-sm-4 d-flex justify-content-center"><img src="./assets/circle.png" class="Circle" id="Circle" title="Circle"></img></div>
             </nav>
             
             <div id="change">${this.tag}<div>
