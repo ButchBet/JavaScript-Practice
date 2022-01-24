@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body {
+    --overcast : #f1f1f2;
+    --warm-grey : #bcbabe;
+    --ice : #a1d6e2;
+    --glacier-blue : #1995ad;
+
+    color: black;
+    background-color: var(--overcast);
+    text-align: justify;
+    height: 100vh;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Open Sans', sans-serif;
+}
