@@ -1,0 +1,163 @@
+{
+    "Blazers & Sport Coats" : {
+        "789123": {
+            "name": "Slim Fit Check Jacket",
+            "brand": "RIVER ISLAND",
+            "Description": "A chalky check highlights this soft, breathable cotton jacket in a smart slim-fit silhouette with flap pockets and button cuffs.",
+            "cost": 127.50,
+            "sizes": ["36", "38", "40", "42", "44"],
+            "colors": ["Navy"],
+            "combination": {
+                "36": ["Navy"], 
+                "38": ["Navy"], 
+                "40": ["Navy"], 
+                "42": ["Navy"], 
+                "44": ["Navy"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/be8c1352-e516-4d34-a4e6-2023dd67f18c.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/e187b433-54d0-4edf-b86d-9fdf5e6efbcf.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/e731b58f-5f80-4405-817c-70b9c8a28856.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/4cd7f291-d19a-443d-bb0b-4596c8cfd3e1.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/254515c7-62c6-44fb-8003-5bb49d8db991.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/df53da7e-baea-4353-9189-759eac30bd00.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 3,
+            "discount": 25
+        },
+
+        "891234": {
+            "name": "Mixmatch Z 1 Knit Jacket",
+            "brand": "BOSS",
+            "Description": "Heathered ribbing and piping frame the contours of a jacket made of a soft, stretchy cotton blend with handy pockets and a lightweight fit that's easy to layer.",
+            "cost": 68,
+            "sizes": ["Small", "Medium", "Large", "X-large", "XX-large"],
+            "colors": ["Dark Blue"],
+            "combination": {
+                "Small": ["Dark Blue"], 
+                "Medium": ["Dark Blue"], 
+                "Large": ["Dark Blue"], 
+                "X-large": ["Dark Blue"], 
+                "XX-large": ["Dark Blue"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/f5673095-2cfa-4bb8-9c15-dbd7915e28b0.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/949a7f8a-ab02-4dfc-9d04-7dc18481efcc.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 10,
+            "discount": 0
+        }
+    },
+
+    "Coats & Jackets" : {
+        "912345": {
+            "name": "Men's Beans 650 Fill Power Down Down Hooded Jacket",
+            "brand": "L.L.BEAN",
+            "Description": "This lightweight hooded jacket lined with cozy fleece has innovative DownTek™ insulation for extra protection against the cold.",
+            "cost": 149,
+            "sizes": ["Small", "Medium", "Large", "X-large", "XX-large"],
+            "colors": ["Nautical Navy/ Bright Bronze"],
+            "combination": {
+                "Small": ["Nautical Navy/ Bright Bronze"], 
+                "Medium": ["Nautical Navy/ Bright Bronze"], 
+                "Large": ["Nautical Navy/ Bright Bronze"], 
+                "X-large": ["Nautical Navy/ Bright Bronze"], 
+                "XX-large": ["Nautical Navy/ Bright Bronze"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/4442c7a8-2a20-4856-99d3-b16da071e2dd.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/df6cbe15-95a4-4ff6-9cf3-18e6d2563603.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/4f3502ed-3c66-49c7-b0bf-d5ba220f1537.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 7,
+            "discount": 0
+        },
+
+        "987654": {
+            "name": "Macmillan Camo Water Resistant Down Parka",
+            "brand": "CANADA GOOSE",
+            "Description": "From a blustery urban commute to an alps getaway, this cool camo jacket protects from the coldest chills with its lofty insulation and draft-resistant fit.",
+            "cost": 950,
+            "sizes": ["Small", "Medium", "Large", "X-large", "XX-large"],
+            "colors": ["Classic Camo - Camo Classique"],
+            "combination": {
+                "Small": ["Classic Camo - Camo Classique"], 
+                "Medium": ["Classic Camo - Camo Classique"], 
+                "Large": ["Classic Camo - Camo Classique"], 
+                "X-large": ["Classic Camo - Camo Classique"], 
+                "XX-large": ["Classic Camo - Camo Classique"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/8219c72d-e7aa-4ea6-a2d1-063a0790d669.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/c1346572-f905-4a3d-9ba5-a889215a8ebe.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/08e3f8d1-2a65-4f78-bd90-ec520759be9b.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/0fbfd3fe-07d6-4c2d-9b67-57104c7d2352.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/73baece4-6acf-49be-91e4-1ea187728304.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/615b0bfd-ff2c-438e-9286-6d0f5aaaa84f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/296306b6-b9c9-4c30-8028-5fc1d407f5ab.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 10,
+            "discount": 0
+        }
+    },
+
+    "Jeans" : {
+        "876543": {
+            "name": "Transcend – Lennox Slim Fit Jeans",
+            "brand": "PAIGE",
+            "Description": "These Lennox slims feature a subtle taper to form a strikingly modern profile in lightweight TRANSCEND black stretch denim woven from an ultrasoft rayon blend, giving the style undeniable softness and shape-retention for everyday wear.",
+            "cost": 179,
+            "sizes": ["28", "30", "32", "34", "36", "38", "40", "42"],
+            "colors": ["Black Shadow"],
+            "combination": {
+                "28": ["Black Shadow"], 
+                "30": ["Black Shadow"], 
+                "32": ["Black Shadow"], 
+                "34": ["Black Shadow"], 
+                "36": ["Black Shadow"], 
+                "38": ["Black Shadow"], 
+                "40": ["Black Shadow"], 
+                "42": ["Black Shadow"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/6932cb95-81ee-472e-ab22-785401ca5857.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/0a65d941-2682-4e3a-bb0e-3a58f874adc4.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/0332ed73-630c-47a7-8318-3b5a0c3a05a2.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/26e3949c-81ad-4c46-9a23-c7f665ed3bc4.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/f326b77e-a1ee-433f-ba44-dd6de2e8952e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/d9e5f1eb-28de-4f33-b941-35964120043d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/3f53ce57-52c2-474f-bcea-eb51e0330409.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/a821f56e-f339-47be-bab5-8f2ba4e424c9.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/4c58dfac-fc6c-4379-a32e-6a45a636a989.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/00cc6742-3cd2-4183-acb0-b2317f02e55a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 5,
+            "discount": 0
+        },
+
+        "765432": {
+            "name": "Graduate Slim Straight Leg Jeans",
+            "brand": "AG",
+            "Description": "A slimmer version of classic straight-leg jeans, this Japanese-denim pair has a gently sanded medium wash that will complement any work-to-play wardrobe.",
+            "cost": 225,
+            "sizes": ["29x33", "30x33", "31x33", "32x33", "33x33", "35x33", "38x33", "40x33", "42x33"],
+            "colors": ["6 Years Realm"],
+            "combination": {
+                "29x33": ["6 Years Realm"], 
+                "30x33": ["6 Years Realm"], 
+                "31x33": ["6 Years Realm"], 
+                "32x33": ["6 Years Realm"], 
+                "33x33": ["6 Years Realm"], 
+                "35x33": ["6 Years Realm"], 
+                "38x33": ["6 Years Realm"], 
+                "40x33": ["6 Years Realm"], 
+                "42x33": ["6 Years Realm"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/061d9074-b5de-4259-9920-1d3288f0690d.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/c0b81a43-5cd2-48a5-bd38-a8d511039f23.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/cfe7d9f6-658d-427f-b6ee-0b5d1d39a4a9.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/b5ac2024-4468-4738-af27-01d4aa8a634b.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/1980f910-0587-4a1a-89ae-91bc419c3a25.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/0f283d96-af2e-42fc-bd27-843af50bbd5a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/ca5c65e5-2f5d-4b1a-b5fd-f437d2ce5ee2.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 17,
+            "discount": 0
+        }
+    }
+}
