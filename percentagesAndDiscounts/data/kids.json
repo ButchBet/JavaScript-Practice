@@ -94,7 +94,11 @@
             "sizes": ["4", "6", "8", "10", "12"],
             "colors": ["Military Multi Color"],
             "combination": {
-                "4": ["Military Multi Color"], "6": ["Military Multi Color"], "8": ["Military Multi Color"], "10": ["Military Multi Color"], "12": ["Military Multi Color"]
+                "4": ["Military Multi Color"], 
+                "6": ["Military Multi Color"], 
+                "8": ["Military Multi Color"], 
+                "10": ["Military Multi Color"], 
+                "12": ["Military Multi Color"]
             },
             "colorImg": ["https://n.nordstrommedia.com/id/sr3/785d33e7-aa8a-42ea-a1a1-2324d5b34cea.jpeg?crop=fit&w=31&h=31"],
             "item": ["https://n.nordstrommedia.com/id/sr3/800776cc-4894-43c0-b2b7-d29e3b865cb9.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
