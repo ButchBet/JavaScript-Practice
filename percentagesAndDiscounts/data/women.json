@@ -1,0 +1,190 @@
+{
+    "dresses" : {
+        "123456": {
+            "name": "Cover-Up Maxi Dress",
+            "brand": "elan",
+            "Description": "Get an effortless look in this billowy maxi dress topped with thin spaghetti straps and a deep V-back that shows off just the right amount of skin.",
+            "cost": 68,
+            "sizes": ["X-small", "Small", "Medium", "Large", "X-large"],
+            "colors": ["Black Micro Stripe"],
+            "combination": {
+                "X-small": ["Black Micro Stripe"],
+                "Small": ["Black Micro Stripe"],
+                "Medium": ["Black Micro Stripe"],
+                "Large": ["Black Micro Stripe"],
+                "X-large": ["Black Micro Stripe"] 
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/acda8dee-c3bd-467c-8852-420b995c0678.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/e676f62a-dc5b-4792-ae40-83e27bc9f913.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/e7abc3bd-4f92-4b7b-b1c0-e746e363fc7c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/e7abc3bd-4f92-4b7b-b1c0-e746e363fc7c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/4e580e8d-30e1-4ab2-8df4-a16026d6949c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/c205ea78-86b6-44dc-81fd-4cb4fea8dd3e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 5,
+            "discount": 0
+        },
+
+        "234567": {
+            "name": "Ribbed Long Slipdress",
+            "brand": "skims",
+            "Description": "A classic everyday style, this scoop-neck slipdress in ribbed stretch modal from Kim Kardashian West's SKIMS hugs your body with relaxed comfort.",
+            "cost": 78,
+            "sizes": ["X-small", "Small", "Medium", "Large", "X-large"],
+            "colors": ["Camel", "Heather grey", "Sienna", "Onyx", "Rose Clary", "Gold", "Teal", "Peach", "Taupe", "Plum", "Wood"],
+            "combination": {
+                "2X": ["Camel", "Heather grey", "Onyx"], 
+                "3X": ["Camel", "Heather grey", "Sienna", "Onyx", "Rose Clary", "Gold", "Teal", "Peach", "Taupe", "Plum", "Wood"], 
+                "4X": ["Camel", "Heather grey", "Sienna", "Onyx", "Rose Clary", "Gold", "Teal", "Peach", "Taupe", "Plum", "Wood"], 
+                "XX-small": ["Camel", "Heather grey", "Sienna", "Onyx", "Rose Clary", "Gold", "Teal", "Peach", "Taupe", "Plum", "Wood"], 
+                "X-small": ["Camel", "Heather grey", "Sienna", "Onyx", "Rose Clary", "Gold", "Teal", "Peach", "Taupe", "Plum", "Wood"], 
+                "Small": ["Camel", "Heather grey", "Sienna", "Onyx", "Rose Clary", "Gold", "Teal", "Peach", "Taupe", "Plum", "Wood"], 
+                "Medium": ["Camel", "Heather grey", "Sienna", "Onyx", "Rose Clary", "Gold", "Teal", "Peach", "Taupe", "Plum", "Wood"], 
+                "Large": ["Camel", "Heather grey", "Sienna", "Onyx", "Rose Clary", "Gold", "Teal", "Peach", "Taupe", "Plum", "Wood"], 
+                "X-large": ["Camel", "Heather grey", "Sienna", "Onyx", "Rose Clary", "Gold", "Teal", "Peach", "Taupe", "Plum", "Wood"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/604ee6c5-e7e3-4d91-b78c-a0c78ccefe05.jpeg?crop=fit&w=31&h=31",
+                         "https://n.nordstrommedia.com/id/sr3/26a39918-c880-466a-a628-fe095be7888f.jpeg?crop=fit&w=31&h=31",
+                         "https://n.nordstrommedia.com/id/sr3/af13c1de-030e-4e92-8de7-9a194ab24175.jpeg?crop=fit&w=31&h=31", 
+                         "https://n.nordstrommedia.com/id/sr3/2e91b628-6471-4c1e-b4b2-9111a99d156f.jpeg?crop=fit&w=31&h=31",
+                         "https://n.nordstrommedia.com/id/sr3/34be5b2f-c05b-4b7f-bb8a-855338f14645.jpeg?crop=fit&w=31&h=31",
+                         "https://n.nordstrommedia.com/id/sr3/1ccb2cc9-b7e4-4e20-ab3f-2bf259c61e38.jpeg?crop=fit&w=31&h=31",
+                         "https://n.nordstrommedia.com/id/sr3/68749fd8-aaf8-47c4-98a1-db77d38e58a2.jpeg?crop=fit&w=31&h=31",
+                         "https://n.nordstrommedia.com/id/sr3/1a88415f-a088-4a81-a387-f96220df509a.jpeg?crop=fit&w=31&h=31",
+                         "https://n.nordstrommedia.com/id/sr3/f746f678-74ca-4156-82a4-0feea5f009d6.jpeg?crop=fit&w=31&h=31",
+                         "https://n.nordstrommedia.com/id/sr3/794f0287-7974-4d66-b151-45f995ed6e27.jpeg?crop=fit&w=31&h=31",
+                         "https://n.nordstrommedia.com/id/sr3/83a092d9-1ce1-47c9-bee9-8f2bd4493439.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://www.nordstrom.com/s/skims-ribbed-long-slipdress-regular-plus-size/5897391?origin=category-personalizedsort&breadcrumb=Home%2FWomen%2FClothing%2FDresses&color=249",
+                     "https://n.nordstrommedia.com/id/sr3/38496514-9c6e-4410-8059-263a4a253457.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/10cc4dfc-b2ee-4878-8867-85cba297afa1.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196", 
+                     "https://n.nordstrommedia.com/id/sr3/a4758ab0-6022-4ba7-b6b9-91be30249014.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/9ea393af-b503-468c-b64a-3511fc07abca.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/12f40313-0af2-43a5-9661-1a03298bd545.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/4c437f85-9b46-40a7-ae8f-d7bf634d6bb0.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/9c5d4403-00d3-4e72-a49f-4b9624d29cf2.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/a9aeaa26-1b9c-46f7-9391-d30a18f51077.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/df01dd8d-1852-48e4-8e42-0af4897dda87.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/5d717d1a-c8d4-4a03-a854-afa6f40b0670.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 10,
+            "discount": 0
+        }
+    },
+
+    "Jeans & Demin" : {
+        "345678": {
+            "name": "Ab-Solution High Waist Ankle Skinny Jeans",
+            "brand": "WIT & WISDOM",
+            "Description": "Stretchy, ankle-grazing skinny jeans offer easy casual style as they shape, smooth and lift in all the right places thanks to the Ab-solution fit system.",
+            "cost": 70,
+            "sizes": ["OP", "2P", "4P", "6P", "8P", "10P", "12P", "14P", "16P", "18P"],
+            "colors": ["Grey"],
+            "combination": {
+                "OP": ["Grey"], 
+                "2P": ["Grey"], 
+                "4P": ["Grey"], 
+                "6P": ["Grey"], 
+                "8P": ["Grey"],
+                "10P": ["Grey"], 
+                "12P": ["Grey"], 
+                "14P": ["Grey"], 
+                "16P": ["Grey"],
+                "19P": ["Grey"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/2c51e107-384c-46cb-922a-1b7fda0f55c5.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/e2056b23-3f6a-4213-adb2-e7f2592b9342.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/82e68ff4-6614-40ce-b782-d4483cdb49ec.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/1ff88afc-ad7e-46d2-a9aa-1419f5991e1d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196", 
+                     "https://n.nordstrommedia.com/id/sr3/3f54f237-1556-4597-81e3-c39cc7b9b84b.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/800a402a-5a02-41ec-b6a3-fe1921048db8.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/229ea95f-0f24-43f1-af66-de1816101dc7.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/a5ad175b-c775-41cb-b2fa-a79b64e716d7.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 18,
+            "discount": 15
+        },
+
+        "456789": {
+            "name": "Relaxed Flare Jeans",
+            "brand": "BP",
+            "Description": "A high-rise waist and wide legs supply a retro aesthetic to these flare-leg jeans that are cast in an irresistible inky wash.",
+            "cost": 45,
+            "sizes": ["24", "25", "26", "27", "28", "29", "30", "31", "32", "33", "34"],
+            "colors": ["Faded Black Destroy", "White Foliage Wash"],
+            "combination": {
+                "24": ["Faded Black Destroy", "White Foliage Wash"], 
+                "25": ["Faded Black Destroy"], 
+                "26": ["Faded Black Destroy"], 
+                "27": ["Faded Black Destroy", "White Foliage Wash"], 
+                "28": ["White Foliage Wash"], 
+                "29": ["Faded Black Destroy", "White Foliage Wash"], 
+                "30": ["Faded Black Destroy"], 
+                "31": ["Faded Black Destroy"], 
+                "32": ["White Foliage Wash"], 
+                "33": ["Faded Black Destroy", "White Foliage Wash"], 
+                "34": ["Faded Black Destroy", "White Foliage Wash"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/51eb1fd4-0391-4286-87cf-32bf23ea815a.jpeg?crop=fit&w=31&h=31",
+                         "https://n.nordstrommedia.com/id/sr3/695bd7a9-080c-46d6-9bef-53f4c38afe41.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/8a3a8b92-1afd-4fc5-b28e-8ec58ba4db43.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/19749178-e9c5-41ad-8588-7df4b276c4af.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/f695329b-fdc8-430d-8910-a3c1dadf6680.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/a4abcb42-501e-425b-a482-6093ebc33c53.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 10,
+            "discount": 0
+        }
+    },
+
+    "Coats & Jackets" : {
+        "567891": {
+            "name": "Shirt Jacket",
+            "brand": "THREAD & SUPPLY",
+            "Description": "A nip in the air is no match for the just-right warmth of this flannel shirt-jacket with a soft jersey lining and chore-ready pockets.",
+            "cost": 49,
+            "sizes": ["X-small", "Small", "Large", "X-large"],
+            "colors": ["Camel", "Grey Plaid", "Black Tan Plaid", "vory Multi Plaid"],
+            "combination": {
+                "X-small": ["Grey Plaid", "Black Tan Plaid", "vory Multi Plaid"], 
+                "Small": ["Camel", "vory Multi Plaid"], 
+                "Large": ["Black Tan Plaid", "vory Multi Plaid"], 
+                "X-large": ["Camel", "Grey Plaid"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/5b5f7f18-1a77-4c99-9b8c-7fb85557bb77.jpeg?crop=fit&w=31&h=31",
+                         "https://n.nordstrommedia.com/id/sr3/7a6b2117-85ec-4d2a-8663-4ecb161b1c90.jpeg?crop=fit&w=31&h=31",
+                         "https://n.nordstrommedia.com/id/sr3/f72be98b-a60d-41a5-834e-a46d5e25c888.jpeg?crop=fit&w=31&h=31",
+                         "https://n.nordstrommedia.com/id/sr3/5b8b8c40-d182-4e7d-b32e-3029e1187e7e.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/0099e81b-468c-4b2c-8fa1-7c20d2bfd27c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/0b99f334-e101-4b8f-aff0-f955f0070238.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/a8a1a516-c304-48ae-82b9-ed5217462cba.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/31a394a6-aa83-47bb-a5a2-0177fab39e73.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 5,
+            "discount": 0
+        },
+
+        "678912": {
+            "name": "Relaxed Flare Jeans",
+            "brand": "BP",
+            "Description": "A high-rise waist and wide legs supply a retro aesthetic to these flare-leg jeans that are cast in an irresistible inky wash.",
+            "cost": 98,
+            "sizes": ["X-small", "Small", "Large", "X-large"],
+            "colors": ["Vanilla Latte"],
+            "combination": {
+                "X-small": ["Vanilla Latte"], 
+                "Small": ["Vanilla Latte"], 
+                "Large": ["Vanilla Latte"], 
+                "X-large": ["Vanilla Latte"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/d08790ff-4ec4-4c43-8cd6-ece988eac352.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/0ddade09-84dc-4076-a371-d755dbba39c4.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/ec653a11-d618-4d68-98bf-4abca2c18a52.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/ac3046c5-77e7-4593-8c5b-e711d061d396.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/8369057b-15c4-4897-b1fb-58ac04facdd2.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/49fc0f95-9d85-46f1-a7ff-dc6a9f639e96.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 98,
+            "discount": 38
+        }
+    }
+}

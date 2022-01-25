@@ -1,5 +1,6 @@
 import "./header.js";
 import "./addvertisement.js";
+import "./products.js";
 
 class Page extends HTMLElement {
     constructor() {
@@ -31,6 +32,7 @@ class Page extends HTMLElement {
 
             <app-header></app-header>
             <app-addvertisement class=""></app-addvertisement>
+            <app-products></app-products>
         `;
     }
 
