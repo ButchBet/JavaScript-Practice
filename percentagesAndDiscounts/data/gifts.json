@@ -1,0 +1,117 @@
+{
+    "For her" : {
+        "135792": {
+            "name": "Air Force 1 Sneaker",
+            "brand": "NIKE",
+            "Description": "Back-to-basics detailing keeps the look simple and timeless on an '80s-throwback sneaker reissued with solid colors and a cool, low-cut profile.",
+            "cost": 100,
+            "sizes": ["5", "5.5", "6", "6.5", "7", "7.5"],
+            "colors": ["White"],
+            "combination": {
+                "5": ["White"], 
+                "5.5": ["White"], 
+                "6": ["White"], 
+                "6.5": ["White"], 
+                "7": ["White"], 
+                "7.5": ["White"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/c21b11cf-e8fa-4f4f-ac30-8bb53872a95a.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/1e0f4136-9ce4-4a5d-a20c-8a6678c0687b.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838",
+                     "https://n.nordstrommedia.com/id/sr3/20a17448-f762-4751-9d47-5070d594e995.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838",
+                     "https://n.nordstrommedia.com/id/sr3/0e8221ef-580a-4a0b-b2b4-94cbe3b876bb.jpeg?crop=pad&pad_color=FFF&format=jpeg&trim=color&trimcolor=FFF&w=780&h=838"],
+            "video": "",
+            "stock": 3,
+            "discount": 0
+        },
+
+        "246813": {
+            "name": "Fragrance Discovery Set",
+            "brand": "LE LABO",
+            "Description": "A Nordstrom-exclusive, limited-edition set featuring Le Labo's entire fine fragrance line so you can discover your next favorite scent.",
+            "cost": 89,
+            "sizes": [],
+            "colors": [],
+            "combination": {},
+            "colorImg": [],
+            "item": ["https://n.nordstrommedia.com/id/sr3/a724ba5a-fdcd-4f62-a128-d978bcc3be67.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 3,
+            "discount": 0
+        }
+    },
+
+    "For him" : {
+        "357924": {
+            "name": "AnOther 13 Eau de Parfum",
+            "brand": "LE LABO",
+            "Description": "An addictive eau de parfum created in collaboration with AnOther Magazine.",
+            "cost": 100,
+            "sizes": [],
+            "colors": [],
+            "combination": {},
+            "colorImg": [],
+            "item": ["https://n.nordstrommedia.com/id/sr3/0d69cf99-b0d9-4532-9568-73be2067ef39.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/2f98e140-80b8-490c-b460-ce1f3ba95303.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 2,
+            "discount": 40
+        },
+
+        "468135": {
+            "name": "Baby, Won't You Light My Fingers? Candle",
+            "brand": "DADA DAILY",
+            "Description": "This hand-shaped candle is not about the scent but are all about the show as the wicks on every finger but one burn down to make a pointed statement.",
+            "cost": 65,
+            "sizes": [],
+            "colors": ["Malachite"],
+            "combination": {},
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/76e41048-23b9-4123-90a9-d1c8e53209af.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/67fbb9c0-fdf4-4889-87ad-5b5b32f94730.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 17,
+            "discount": 40
+        }
+    },
+
+    "For kids" : {
+        "579246": {
+            "name": "ICEE® Slushie Making Machine",
+            "brand": "ISCREAM",
+            "Description": "Pour yourself the coolest ICEE drink in town, made right at home with this countertop machine.",
+            "cost": 115,
+            "sizes": [],
+            "colors": ["None"],
+            "combination": {},
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/3e50d0c4-d5cd-4b59-b927-cb69cdf054ef.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/c74bb211-5df3-42e1-a5b0-06240ca868b1.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/f2ddbddb-675b-4cb2-9874-900ecf876212.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/dc418918-9427-4b56-90fa-3c8300b653cd.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/c2e2cb0b-b947-466c-b493-ba838fc9120a.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/a9aa43c7-b778-40c4-aa32-1256164b15cd.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 15,
+            "discount": 0
+        },
+
+        "681357": {
+            "name": "Kids' Old School Joggers",
+            "brand": "TREASURE & BOND",
+            "Description": "Keep her comfy, casual and cool in these weekend-perfect tie-waist joggers crafted from pure cotton.",
+            "cost": 35,
+            "sizes": ["Small", "Medium", "Large", "X-large"],
+            "colors": ["Grey Heather"],
+            "combination": {
+                "Small": ["Grey Heather"], 
+                "Medium": ["Grey Heather"], 
+                "Large": ["Grey Heather"], 
+                "X-large": ["Grey Heather"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/a0bef341-0a51-4cd2-a486-91e6ac7cc1b8.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/ca5adf7f-6f3f-4432-b7dd-50e7801c91f2.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/afff80bc-ed16-4afa-8b9a-997a238550ea.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 7,
+            "discount": 60
+        }
+    }
+}
