@@ -1,0 +1,129 @@
+{
+    "Coats & Jackets" : {
+        "654321": {
+            "name": "Kids' Beans Down Jacket",
+            "brand": "L.L.BEAN",
+            "Description": "This winter jacket lined with cozy, high-pile fleece with innovative DownTek™ insulation allows your kid to play outside longer, no matter the weather.",
+            "cost": 89,
+            "sizes": ["2T"],
+            "colors": ["Mauve Berry"],
+            "combination": {
+                "2T": ["Mauve Berry"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/46fddc5c-ac94-4b6c-bc0e-e2946ed08a63.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/d2207b90-49a8-4c0f-a4ee-c26a6914e4be.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/ffb6fed7-02c6-4bc5-8295-fe12a7abfc0f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 3,
+            "discount": 0
+        },
+
+        "543219": {
+            "name": "Peacoat",
+            "brand": "NORDSTROM",
+            "Description": "The classic peacoat gets a fun upgrade in a primary color that makes for a bright and happy start on brisk mornings.",
+            "cost": 65,
+            "sizes": ["Small", "Medium", "Large", "X-large"],
+            "colors": ["Red Salsa"],
+            "combination": {
+                "Small": ["Red Salsa"], 
+                "Medium": ["Red Salsa"], 
+                "Large": ["Red Salsa"], 
+                "X-large": ["Red Salsa"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/0b11abfd-19d2-478b-84ad-58d51c5ab6ee.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/cc5f4851-5d4b-407a-9bf2-eb14e99514cf.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/ed5ff139-8644-4f72-8563-e01de6573556.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 10,
+            "discount": 0
+        }
+    },
+
+    "Girls' Jeans" : {
+        "432198": {
+            "name": "Kids' Skinny Jeans",
+            "brand": "7 FOR ALL MANKIND",
+            "Description": "She'll love the look and feel of these skinny jeans made with comfortable stretch and saturated in a dark blue hue.",
+            "cost": 49,
+            "sizes": ["4", "5", "6", "6X"],
+            "colors": ["Twilight Blue"],
+            "combination": {
+                "4": ["Twilight Blue"], 
+                "5": ["Twilight Blue"], 
+                "6": ["Twilight Blue"], 
+                "6X": ["Twilight Blue"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/9ffa14f8-3992-4a78-b9a0-df0de82d24f9.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/02c886e6-b121-42ac-a564-034365dbd68f.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/49049a79-ba46-49b9-abbd-5fbc43dac9a3.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/c1efd2e4-fc3f-4835-905a-6f341a230623.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 7,
+            "discount": 40
+        },
+
+        "321987": {
+            "name": "The Rocker Raw Hem Ankle Skinny Jeans",
+            "brand": "JOE'S",
+            "Description": "She may not be a rock star yet, but she can look the part in these mid-rise stretch-denim skinnies grunged up with light fading, whiskering and tattered hems.",
+            "cost": 49,
+            "sizes": ["8", "12", "14", "16"],
+            "colors": ["Pew-Pewter"],
+            "combination": {
+                "8": ["Pew-Pewter"], 
+                "12": ["Pew-Pewter"], 
+                "14": ["Pew-Pewter"], 
+                "16": ["Pew-Pewter"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/164e06c7-74ce-45cf-b82f-3e8743bfaa28.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/f445452e-4381-48a2-8d97-7066a75e390e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/76c3b6b8-ef36-4020-a2e4-a4dacb05d14d.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 11,
+            "discount": 53
+        }
+    },
+
+    "Boys' Jeans" : {
+        "219876": {
+            "name": "Kids' Denim Carpenter Pants",
+            "brand": "OFF-WHITE",
+            "Description": "Your kiddo can work hard and play hard in these nonstretch-denim carpenter jeans designed with plenty of pockets to hold whatever they need throughout the day.",
+            "cost": 560,
+            "sizes": ["4", "6", "8", "10", "12"],
+            "colors": ["Military Multi Color"],
+            "combination": {
+                "4": ["Military Multi Color"], "6": ["Military Multi Color"], "8": ["Military Multi Color"], "10": ["Military Multi Color"], "12": ["Military Multi Color"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/785d33e7-aa8a-42ea-a1a1-2324d5b34cea.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/800776cc-4894-43c0-b2b7-d29e3b865cb9.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/85d19a9e-c340-412a-b0cf-5c45210c2192.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/06022aa3-d49d-4b2b-9f2b-6bf7195d46ed.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 8,
+            "discount": 60
+        },
+
+        "198765": {
+            "name": "Kids' Logo Stretch Cotton Jeans",
+            "brand": "PALM ANGELS",
+            "Description": "Logo letters. threadbare distressing and strategic fading add up to a cool look on Italian jeans made from stretch cotton with a kid-friendly elastic waist.",
+            "cost": 375,
+            "sizes": ["8Y", "10Y", "12Y"],
+            "colors": ["Blue White"],
+            "combination": {
+                "8Y": ["Blue White"], 
+                "10Y": ["Blue White"], 
+                "12Y": ["Blue White"]
+            },
+            "colorImg": ["https://n.nordstrommedia.com/id/sr3/3e82bb3c-c818-4749-853e-2136d39f4ec3.jpeg?crop=fit&w=31&h=31"],
+            "item": ["https://n.nordstrommedia.com/id/sr3/8dc6a71b-7a92-4f9b-a37d-62f784804f2c.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/29bbbcc2-d3e6-4731-a5da-4c84059ecd4e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196",
+                     "https://n.nordstrommedia.com/id/sr3/d7f89393-dd85-4498-b210-062d3155c20e.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196"],
+            "video": "",
+            "stock": 25,
+            "discount": 60
+        }
+    }
+}
