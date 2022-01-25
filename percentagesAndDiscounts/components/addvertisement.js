@@ -21,7 +21,7 @@ class Addvertisement extends HTMLElement {
     static get styles() {
         return `
             :host {
-                display: flex;
+                display: inline-block;
                 height: 25rem;
                 margin-top: .5em;
             }
@@ -70,7 +70,7 @@ class Addvertisement extends HTMLElement {
     render() {
         this.shadowRoot.innerHTML = `
             <style>${Addvertisement.styles}</style>
-            <section class="d-flex flex-row flex-wrap justify-content-center align-content-center">
+            <section class="">
                 <img src="../assets/${this.image}" alt="${this.imageAlt}" title="${this.imageTitle}">
             </section>
         `;
