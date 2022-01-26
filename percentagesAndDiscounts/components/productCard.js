@@ -5,20 +5,98 @@ class ProductCard extends HTMLElement {
         this.attachShadow({mode : "open"});
 
         this.productName = "Peacoat";
-        // this.image = "https://n.nordstrommedia.com/id/sr3/cc5f4851-5d4b-407a-9bf2-eb14e99514cf.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196";
+        this.image = "https://n.nordstrommedia.com/id/sr3/cc5f4851-5d4b-407a-9bf2-eb14e99514cf.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196";
         this.alt = "Peacoat";
         this.colorAlt = "Red Salsa";
+        this.beforeDiscount = 89;
+        this.discount = 15;
+        this.afterDiscount = Math.floor(this.beforeDiscount * (1 - (this.discount/100)));
+        this.state = "Now";
     }
 
     static get styles() {
         return `
             :host {
                 display: flex;
+                flex-flow: column;
+                align-items: center;
                 position: relative;
                 width: 15rem;
-                height: 18rem;
-                background: red;
+                height: 25rem;
             }
+
+            .images {
+                width: 100%;
+                height: 80%;
+                position: relative;
+            } .images img {
+                height: 100%;
+                width: 100%;
+            } .move {
+                display: flex;
+                position: absolute;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                top: 0;
+                left: 0;
+                background: transparent;
+                width: 100%;
+                height: 100%;
+            }.left,
+              .right {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-content: center;
+                background: var(--ice);
+                width: 2em;
+                height: 100%;
+                top: 0;
+                opacity: .1;
+                cursor: pointer;
+            } .right {
+            } .left:hover,
+              .right:hover {
+                  opacity: 1;
+            } 
+            
+            .costs {
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-evenly;
+                width: 100%;
+                height: 10%;
+                // border-left: .1px solid var(--overcast);
+                // border-right: .1px inset var(--overcast);
+            } .calcName {
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                gap: 0;
+                height: 100%;
+                width: 33.333%;
+            } .name {
+                font-size: 10px;
+                text-align: center;
+                margin: 0;
+            } .costAndMore {
+                margin: 0;
+                text-align: center;
+                z-index: 1;
+            }.check {
+                width: 100%;
+                height: 10%;
+                background: var(--glacier-blue);
+                font-family: inherit;
+                font-weight: bold;
+            }
+            
+            .description {
+                width: 100%;
+                background: yellow;
+            }
+
+            
         `;
     }
 
@@ -36,22 +114,35 @@ class ProductCard extends HTMLElement {
             
             <section class="images">
                 <img src="${this.image}" alt="${this.alt}">
-                <i class="gg-arrow-right-r"></i>
+
+                
+                <div class="move">
+                    <div class="left"><</div>
+
+                    <div class="right">></div>
+                </div>
+            </section>
+                
+            <section class="costs">
+                <div class="calcName">
+                    <p class="name">${this.state}</p>
+                    <p class="costAndMore afterDiscount">$${this.afterDiscount}</p>
+                </div>
+
+                <div class="calcName">
+                    <p class="name">Discount</p>
+                    <p class="costAndMore discount">${this.discount}%</p>
+                </div>
+
+                <div class="calcName">
+                    <p class="name">Defore</p>
+                    <p class="costAndMore beforeDiscount">$${this.beforeDiscount}</p>
+                </div>
             </section>
 
-            <section class="description">
-                <div class="name"><p>${this.productName}</p></div>
-
-                <section class="colors">
-                    <img class="color" src="https://n.nordstrommedia.com/id/sr3/0b11abfd-19d2-478b-84ad-58d51c5ab6ee.jpeg?crop=fit&w=31&h=31" alt="${this.colorAlt}">
-
-                    <i class="gg-arrow-right-r"></i>
-                </section>
-
-                <button class="check">Check</button>
-            </section>
+            <button class="check">Check</button>
         `;
     }
 }
-
+        
 customElements.define("app-product-card", ProductCard);

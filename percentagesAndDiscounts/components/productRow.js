@@ -7,6 +7,8 @@ class ProductRow extends HTMLElement {
         this.attachShadow({mode : "open"});
 
         this.category = "Kids";
+
+        this.id = null; // Can open the respective json file
     }
 
     static get styles() {
@@ -20,13 +22,17 @@ class ProductRow extends HTMLElement {
             .category {
             }
 
+            h3 {
+                text-align: center;
+            }
+
             .product-row {
                 width: 100%;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: space-evenly;
-                align-content: center;
-                gap: 20px;
+                align-content: space-around;
+                gap: 2rem 0;
             }
 
             @media screen and (max-width: 575px) {
@@ -48,17 +54,10 @@ class ProductRow extends HTMLElement {
             <section class="category">
                 <h3>${this.category}</h3>
                 <div class="product-row">
-                    <app-product-card></app-product-card>
-                    <app-product-card></app-product-card>
-                    <app-product-card></app-product-card>
-                    <app-product-card></app-product-card>
-                    <app-product-card></app-product-card>
-                    <app-product-card></app-product-card>
-                    <app-product-card></app-product-card>
                 </div>
             </section>
         `;
     }
 }
 
-customElements.define("app-product-row", ProductRow);
+window.customElements.define("app-product-row", ProductRow);

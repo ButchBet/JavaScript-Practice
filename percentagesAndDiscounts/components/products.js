@@ -8,7 +8,9 @@ class Products extends HTMLElement {
         this.attachShadow({mode : "open"});
         
 
-        this.changeNeeded = false;
+        this.change = false; // Avoid repeat the product row creating multiple times
+
+        this.files = ["men", "women", "kids", "gifts"]; // type value of each product row
     }
 
     static get styles() {
@@ -32,6 +34,7 @@ class Products extends HTMLElement {
             #products {
                 width: 100%;
                 display: flex;
+                flex-flow: column;
             }
 
             @media screen and (max-width: 575px) {
@@ -45,21 +48,28 @@ class Products extends HTMLElement {
     connectedCallback() {
         this.render();
 
-        const option = {
-            "method" : "GET",
-            "header" : {}
-        };
+        const products = this.shadowRoot.getElementById("products");
 
-        if(this.changeNeeded) {
-            // Data 
-            let men = fetch("../data/men.json", option);
-            let women = fetch("../data/women.json", option);
-            let kids = fetch("../data/kids.json", option);
-            let gifts = fetch("../data/gifts.json", option);
+        if(!this.change) {
+            this.files.forEach((element) => {
+                console.log(element);
 
+                const newELement = document.createElement("app-product-row");
+                
+                newELement.id = element;
+                
+                console.log(newELement.id);
 
-            this.changeNeeded = false;
+                console.log(newELement);
+
+                products.appendChild(newELement);
+            });
+
+            this.change = true;
+
+            this.connectedCallback();
         }
+        
     }
 
     disconnectedCallback() {}
@@ -73,7 +83,6 @@ class Products extends HTMLElement {
                 <app-filter></app-filter>
 
                 <section id="products">
-                    <app-product-row></app-product-row>
                 </section>
             </main>
         `;
