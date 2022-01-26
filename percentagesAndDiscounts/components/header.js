@@ -15,6 +15,7 @@ class Header extends HTMLElement {
 
                 --bs-gutter-x: 0rem !important;
                 position: relative;
+                font-size: 10px;
             }
 
             // header::before {
