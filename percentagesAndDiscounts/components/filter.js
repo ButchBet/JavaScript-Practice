@@ -41,7 +41,7 @@ class Filter extends HTMLElement {
                 position: absolute;
                 width: 2rem;
                 height: 2rem;
-                top: 32rem;
+                top: 33rem;
                 left: 1rem;
                 border: .2ox solid var(--ice);
                 border-radius: 100%;
@@ -63,6 +63,7 @@ class Filter extends HTMLElement {
                 border: .2px solid var(--warm-grey);
                 // border-radius: 10px;
                 box-shadow: 1px 1px .5px black;
+                z-index: 1;
             }
 
             .hidden {
@@ -71,7 +72,8 @@ class Filter extends HTMLElement {
 
             @media screen and (max-width: 575px) {
                 :host {
-                    top: 46rem !important;
+                    top: 47rem !important;
+                    z-index: 1;
                 }
             }
         `;
