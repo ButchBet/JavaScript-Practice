@@ -49,7 +49,7 @@ class ProductRow extends HTMLElement {
         // Getting element to clone (The card one)
         const card = this.shadowRoot.getElementById("card");
 
-        // Getting emenet to fill (The row one)
+        // Getting element to fill (The row one)
         const row = this.shadowRoot.getElementById("product-row");
 
         // Fetch especifications
@@ -60,32 +60,29 @@ class ProductRow extends HTMLElement {
               }
         };
 
-        fetch(`../data/${this.id}.json`, option)
+        // Create the file reference
+        const fileReference = `../data/${this.id}.json`;
+
+        // Opan de items file
+        fetch("../data/items.json", option)
         .then(response => response.json())
         .then(response => {
-            // Accesing to the item category
-            for(let key in response) {
-                const subResponse = response[key];
-                // Accesing to the item
-                for(let subKey in subResponse) {
-                    const item = subResponse[subKey];
-                    // Clone card element
-                    const newCardElement = card.cloneNode(true);
+            // Save the array of items refered to the category 
+            const items = response[this.id];
 
-                    // Remove the hidden class and change the id for the item number
-                    newCardElement.classList.toggle("hidden");
-                    newCardElement.id  = subKey;
+            // Create one card element for every item
+            items.forEach(e => {
+                // Clone card element
+                const newCardElement = card.cloneNode(true);
 
-                    // Add attributes (productName, image, alt, colorAlt, cost:beforeDiscount, discount)
-                    newCardElement.productName = item.name;
-                    newCardElement.image = item.item[0];
-                    newCardElement.alt = item.name;
-                    newCardElement.beforeDiscount = item.cost;
-                    newCardElement.discount = item.discount;
-                    
-                    row.appendChild(newCardElement);
-                }
-            }
+                // Remove the hidden class, change the id for the item number and add the file reference
+                newCardElement.classList.toggle("hidden");
+                newCardElement.id  = e;
+                newCardElement.fileReference = fileReference;
+
+                // Append the new element inside the row
+                row.appendChild(newCardElement);
+            });
         })
         .catch(err => console.log("The erros: " + err));
 

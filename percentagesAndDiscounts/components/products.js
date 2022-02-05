@@ -89,8 +89,6 @@ class Products extends HTMLElement {
             });
             
             this.changeRow = true;
-
-            // console.log(products);
         }
     }
 

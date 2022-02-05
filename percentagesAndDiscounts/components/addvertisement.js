@@ -40,7 +40,7 @@ class Addvertisement extends HTMLElement {
                 :host {
                     margin: 0;
                     position: relative;
-                    top: 14rem;
+                    top: 15rem;
                 }
             }
         `;

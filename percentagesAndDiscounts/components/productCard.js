@@ -100,7 +100,31 @@ class ProductCard extends HTMLElement {
     }
 
     connectedCallback() {
-        this.afterDiscount = Math.floor(this.beforeDiscount * (1 - (this.discount/100)));
+        // this.afterDiscount = Math.floor(this.beforeDiscount * (1 - (this.discount/100)));
+
+        // fetch("../data/items.json", option)
+        // .then(response => response.json())
+        // .then(response => {
+        //     // Accesing to the item category
+        //     for(let key in response) {
+        //         const subResponse = response[key];
+        //         // Accesing to the item
+        //         for(let subKey in subResponse) {
+        //             const item = subResponse[subKey];
+        //             // Clone card element
+        //             const newCardElement = card.cloneNode(true);
+
+        //             // Remove the hidden class, change the id for the item number and add the file reference
+        //             newCardElement.classList.toggle("hidden");
+        //             newCardElement.id  = subKey;
+        //             newCardElement.fileReference = fileReference;
+
+                    
+        //             row.appendChild(newCardElement);
+        //         }
+        //     }
+        // })
+        // .catch(err => console.log("The erros: " + err));
         this.render();
     }
 
