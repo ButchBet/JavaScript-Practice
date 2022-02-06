@@ -4,13 +4,17 @@ class ProductCard extends HTMLElement {
 
         this.attachShadow({mode : "open"});
 
-        // this.productName = "Peacoat";
-        // this.image = "https://n.nordstrommedia.com/id/sr3/cc5f4851-5d4b-407a-9bf2-eb14e99514cf.jpeg?crop=pad&pad_color=FFF&format=jpeg&w=780&h=1196";
-        // this.alt = "Peacoat";
-        // this.colorAlt = "Red Salsa";
-        // this.beforeDiscount = 89;
-        // this.discount = 15;
-        this.state = "Now";
+        // Declarations of the main variables to manipulate thei information of each product card
+        this.productName = "Peacoat";
+        this.images = []; // Used to change product image when the use click on the previus or next button
+        this.image = this.images[0];
+        this.alt = "Peacoat";
+        this.colorAlt = "Red Salsa";
+        this.beforeDiscount = 89;
+        this.discount = 15;
+        this.affterDiscount = Math.floor(this.beforeDiscount * (1 - (this.discount/100)));
+        this.state1 = "Now";
+        this.state2 = "Before";
     }
 
     static get styles() {
@@ -99,32 +103,43 @@ class ProductCard extends HTMLElement {
         `;
     }
 
+    // this.afterDiscount = Math.floor(this.beforeDiscount * (1 - (this.discount/100)));
+
     connectedCallback() {
-        // this.afterDiscount = Math.floor(this.beforeDiscount * (1 - (this.discount/100)));
+        const option = {
+            method: "GET",
+            headers: {
+                "Content-Type": "application/json"
+              }
+        };
 
-        // fetch("../data/items.json", option)
-        // .then(response => response.json())
-        // .then(response => {
-        //     // Accesing to the item category
-        //     for(let key in response) {
-        //         const subResponse = response[key];
-        //         // Accesing to the item
-        //         for(let subKey in subResponse) {
-        //             const item = subResponse[subKey];
-        //             // Clone card element
-        //             const newCardElement = card.cloneNode(true);
+        fetch(this.fileReference, option)
+        .then(response => response.json())
+        .then(response => {
+            // We will serach the element with the item number
+            for(let key in response) { // The category key
+                const subResponse = response[key];
+                let change = false; // To srop the iteration in case that we find it before the end
 
-        //             // Remove the hidden class, change the id for the item number and add the file reference
-        //             newCardElement.classList.toggle("hidden");
-        //             newCardElement.id  = subKey;
-        //             newCardElement.fileReference = fileReference;
+                // Accesing to the item
+                for(let subKey in subResponse) {
+                    const item = subResponse[subKey];
 
-                    
-        //             row.appendChild(newCardElement);
-        //         }
-        //     }
-        // })
-        // .catch(err => console.log("The erros: " + err));
+                    if(item == this.id) { // If we find it
+                            console.log(this.id);
+                    } else {
+                        change = true;
+
+                        break;
+                    }
+                }
+
+                if(change) {
+                    break;
+                }
+            }
+        })
+        .catch(err => console.log("The erros: " + err));
         this.render();
     }
 
@@ -141,25 +156,25 @@ class ProductCard extends HTMLElement {
 
                 
                 <div class="move">
-                    <div class="left"><</div>
+                    <div id="left" class="left"><</div>
 
-                    <div class="right">></div>
+                    <div if="right" class="right">></div>
                 </div>
             </section>
                 
             <section class="costs">
-                <div class="calcName">
-                    <p class="name">${this.state}</p>
+                <div id="afterDiscount" class="calcName">
+                    <p class="name">${this.state1}</p>
                     <p class="costAndMore afterDiscount">$${this.afterDiscount}</p>
                 </div>
 
-                <div class="calcName">
+                <div id="discount" class="calcName">
                     <p class="name">Discount</p>
                     <p class="costAndMore discount">${this.discount}%</p>
                 </div>
 
-                <div class="calcName">
-                    <p class="name">Defore</p>
+                <div id="beforeDiscount" class="calcName">
+                    <p class="name">${this.state2}</p>
                     <p class="costAndMore beforeDiscount">$${this.beforeDiscount}</p>
                 </div>
             </section>
