@@ -80,12 +80,14 @@ class Filter extends HTMLElement {
         this.filterIcon = this.shadowRoot.getElementById("filter-icon");
         this.parameters = this.shadowRoot.getElementById("parameters");
 
-        this.filterIcon.addEventListener("click", (e) => {
+        this.filterIcon.onclick =  (e) => {
             this.parameters.classList.toggle("hidden");
-        });
+        };
     }
 
-    disconnectedCallback() {}
+    disconnectedCallback() {
+        this.filterIcon.onclick = null;
+    }
 
     render() {
         this.shadowRoot.innerHTML = 

@@ -4,10 +4,20 @@ class ProductCard extends HTMLElement {
 
         this.attachShadow({mode : "open"});
 
+        // Prevent to repit the fetch petition
+        this.change = false;
+        
+        // Prevent the initialization of of the image with the index 0 
+        this.loadedImages = false;
+
+        // Save the object of the item
+        this.item = null;
+
         // Declarations of the main variables to manipulate thei information of each product card
         this.productName = "Peacoat";
         this.images = []; // Used to change product image when the use click on the previus or next button
-        this.image = this.images[0];
+        this.image;
+        this.index = 0;
         this.alt = "Peacoat";
         this.colorAlt = "Red Salsa";
         this.beforeDiscount = 89;
@@ -103,44 +113,104 @@ class ProductCard extends HTMLElement {
         `;
     }
 
-    // this.afterDiscount = Math.floor(this.beforeDiscount * (1 - (this.discount/100)));
+    goLeft() {
+        if(this.index === 0) {
+            this.index = this.images.length - 1;
+        } else {
+            this.index--;
+        }
+
+        this.image = this.images[this.index];
+        
+        this.connectedCallback();
+    }
+
+    goRight() {
+        if(this.index === this.images.length - 1) {
+            this.index = 0;
+        } else {
+            this.index++;
+        }
+
+        this.image = this.images[this.index];
+
+        this.connectedCallback();
+    }
 
     connectedCallback() {
-        const option = {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json"
-              }
-        };
+        if(!this.change) {
+            
+            const option = {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json"
+                }
+            };
 
-        fetch(this.fileReference, option)
-        .then(response => response.json())
-        .then(response => {
-            // We will serach the element with the item number
-            for(let key in response) { // The category key
-                const subResponse = response[key];
-                let change = false; // To srop the iteration in case that we find it before the end
 
-                // Accesing to the item
-                for(let subKey in subResponse) {
-                    const item = subResponse[subKey];
+            fetch(this.fileReference, option)
+            .then(response => response.json())
+            .then(response => {
+                // We will serach the element with the item number
+                for(var key in response) { // The category key
+                    let change = false; // To stop the iteration in case that we find it before the end
 
-                    if(item == this.id) { // If we find it
-                            console.log(this.id);
-                    } else {
-                        change = true;
+                    // Accesing to the item
+                    for(var subKey in response[key]) {
+                        if(subKey === this.id) {
+                            // Save the object in item
+                            this.item = response[key][subKey]; 
 
+                            // Change every propety
+                            this.change = true;
+                            this.connectedCallback();                            
+                            
+                            // Change the change variable to can stop the fist loop
+                            change = true;
+                            break;
+                        }
+                    }
+
+                    if(change) {
                         break;
                     }
                 }
+            })
+            .catch(err => console.log("The erros: " + err));
+        } else {
+            // Saving the neccesary variables
+            this.alt = this.item.name;
+            this.discount = this.item.discount;
+            this.beforeDiscount = this.item.cost;
+            this.afterDiscount = Math.floor(this.beforeDiscount * (1 - (this.discount/100)));
+            
+            // Saving the images
+            if(!this.loadedImages) {
+                this.images = this.item.item;
+                
+                this.image = this.images[this.index];
 
-                if(change) {
-                    break;
-                }
-            }
-        })
-        .catch(err => console.log("The erros: " + err));
-        this.render();
+                this.loadedImages = true;
+            } 
+
+
+
+            this.render()
+
+            // Getting the left ands right buttons
+            this.left = this.shadowRoot.getElementById("left");
+
+            this.right = this.shadowRoot.getElementById("right");
+
+            // Adding evending to move thought the images
+            this.left.onclick = () => this.goLeft();
+
+            this.right.onclick = () => this.goRight();
+
+            // Getting the image element
+            this.imageElement = this.shadowRoot.getElementById("image");
+
+        }
     }
 
     disconnectedCallback() {}
@@ -152,13 +222,13 @@ class ProductCard extends HTMLElement {
             <link href='https://css.gg/arrow-right-r.css' rel='stylesheet'>
             
             <section class="images">
-                <img src="${this.image}" alt="${this.alt}">
+                <img id="image" src="${this.image}" alt="${this.alt}">
 
                 
                 <div class="move">
                     <div id="left" class="left"><</div>
 
-                    <div if="right" class="right">></div>
+                    <div id="right" class="right">></div>
                 </div>
             </section>
                 

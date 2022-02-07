@@ -49,6 +49,7 @@ class Addvertisement extends HTMLElement {
     connectedCallback() {
         this.render();
 
+        // Create an interval to can go thought the array of images and show every image every 5 seconds
         setInterval(() => {
             console.log(this.index);
             this.image = this.images[this.index];
@@ -57,7 +58,7 @@ class Addvertisement extends HTMLElement {
             
             this.index++;
 
-            if(this.index === this.len) {
+            if(this.index === this.len) { // Check if the index if the final image
                 this.index = 0;
             }
 
