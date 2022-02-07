@@ -249,7 +249,6 @@ class ProductCard extends HTMLElement {
                 </div>
             </section>
             asdfasdfaf
-
             <button class="check">Check</button>
         `;
     }
