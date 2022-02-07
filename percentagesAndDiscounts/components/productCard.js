@@ -248,6 +248,7 @@ class ProductCard extends HTMLElement {
                     <p class="costAndMore beforeDiscount">$${this.beforeDiscount}</p>
                 </div>
             </section>
+            asdfasdfaf
 
             <button class="check">Check</button>
         `;
