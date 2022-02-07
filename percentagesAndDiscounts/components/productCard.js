@@ -137,8 +137,6 @@ class ProductCard extends HTMLElement {
         this.connectedCallback();
     }
 
-    // this.afterDiscount = Math.floor(this.beforeDiscount * (1 - (this.discount/100)));
-
     connectedCallback() {
         if(!this.change) {
             
@@ -180,6 +178,12 @@ class ProductCard extends HTMLElement {
             })
             .catch(err => console.log("The erros: " + err));
         } else {
+            // Saving the neccesary variables
+            this.alt = this.item.name;
+            this.discount = this.item.discount;
+            this.beforeDiscount = this.item.cost;
+            this.afterDiscount = Math.floor(this.beforeDiscount * (1 - (this.discount/100)));
+            
             // Saving the images
             if(!this.loadedImages) {
                 this.images = this.item.item;
