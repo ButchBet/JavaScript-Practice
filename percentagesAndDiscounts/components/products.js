@@ -1,6 +1,7 @@
 import "./filter.js";
 import "./productRow.js";
 
+
 class Products extends HTMLElement {
     constructor() {
         super();
@@ -43,14 +44,13 @@ class Products extends HTMLElement {
             //     background: yellow;
             // }
 
-            // #gifts {
-            //     background: pink;
-            // }
+            #gifts {
+            }
 
             #products {
                 width: 100%;
                 display: flex;
-                flex-flow: column;
+                flex-flow: row wrap;
             }
 
             .hidden {
@@ -104,7 +104,7 @@ class Products extends HTMLElement {
 
                 <section id="products">
                 </section>
-                </main>
+            </main>
             <app-product-row class="hidden" id="row"></app-product-row>
         `;
     }
