@@ -102,6 +102,7 @@ class ProductCard extends HTMLElement {
                 background: var(--glacier-blue);
                 font-family: inherit;
                 font-weight: bold;
+                cursor: pointer;
             }
             
             .description {
@@ -182,6 +183,7 @@ class ProductCard extends HTMLElement {
             this.alt = this.item.name;
             this.discount = this.item.discount;
             this.beforeDiscount = this.item.cost;
+            this.title = this.item.name;
             this.afterDiscount = Math.floor(this.beforeDiscount * (1 - (this.discount/100)));
             
             // Saving the images
@@ -221,7 +223,7 @@ class ProductCard extends HTMLElement {
             <style>${ProductCard.styles}</style>
             <link href='https://css.gg/arrow-right-r.css' rel='stylesheet'>
             
-            <section class="images">
+            <section class="images" title="${this.title}">
                 <img id="image" src="${this.image}" alt="${this.alt}">
 
                 
@@ -248,7 +250,6 @@ class ProductCard extends HTMLElement {
                     <p class="costAndMore beforeDiscount">$${this.beforeDiscount}</p>
                 </div>
             </section>
-            asdfasdfaf
             <button class="check">Check</button>
         `;
     }
