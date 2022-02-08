@@ -45,6 +45,7 @@ class Products extends HTMLElement {
             // }
 
             #gifts {
+                margin-bottom: 5rem;
             }
 
             #products {
