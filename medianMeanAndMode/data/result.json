@@ -1,0 +1,8 @@
+{
+    "totalNumbers" : 10,
+    "numbersAddition" : 34,
+    "main" : 3,
+    "median" : 4,
+    "mode" : 4,
+    "ascendingMode" : [1, 2, 2, 2, 4, 4, 4, 4, 5, 6]
+}
