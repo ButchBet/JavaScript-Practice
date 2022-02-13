@@ -2,6 +2,7 @@
     --dark-aqua: #488A99;
     --gold: #DBAE58;
     --charcola: #4D585B;
+    --charcola-lignt: #b3b9bb;
     --white : #ffffff
     padding: 0;
     margin: 0;
@@ -16,11 +17,11 @@
 }
 
 h1 {
-    background-color: red;
+    /* background-color: red; */
 }
 
 #input {
-    background-color: yellow;
+    /* background-color: yellow; */
     padding-bottom: 6px;
 } #input textarea:focus {
     outline: none;
@@ -29,11 +30,25 @@ h1 {
 }
 
 #output {
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 #info {
-    background-color: blueviolet;
+    padding-top: 1rem !important;
+    /* background-color: blueviolet; */
+}
+
+
+button { 
+    background-color: var(--gold);
+}
+
+#messageCont {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 .hidden {

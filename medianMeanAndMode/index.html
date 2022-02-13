@@ -15,24 +15,28 @@
     <title>ArithJS</title>
 </head>
 <body>
-    <section id="container" class="container">
+    <ection id="container" class="container">
         <h1 class="container text-center">Calculate the median, mean and mode</h1>
 
         <section id="input" class="container">
             <h3>Enter numbers separated by commas</h3>
             <textarea name="numbers" id="numbers" placeholder="1, 2, 5, 1, 9" class="container"></textarea>
-            <button class="btn btn-primary container">Calculate</button>
+            <button class="btn btn-primary container" id="button">Calculate</button>
         </section>
 
-        <section id="output" class="container">
+        <section id="messageCont" class="container">
+            <p id="message" class="text-danger hidden"></p>
+        </section>
+
+        <section id="output" class="container hidden">
             <app-output id="app-output" 
                         class="container"
-                        totalNumbers="10"
-                        numbersAddition="34"
-                        main="3"
-                        median="4"
-                        mode="4"
-                        ascendingMode="1 2 2 2 4 4 4 4 5 6"
+                        totalNumbers=""
+                        numbersAddition=""
+                        main=""
+                        median=""
+                        mode=""
+                        ascendingMode=""
                         >
             </app-output>
 
