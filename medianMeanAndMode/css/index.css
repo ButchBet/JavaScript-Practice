@@ -1,0 +1,56 @@
+* {
+    --dark-aqua: #488A99;
+    --gold: #DBAE58;
+    --charcola: #4D585B;
+    --charcola-lignt: #b3b9bb;
+    --white : #ffffff
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+}
+
+#container {
+    display: flex;
+    flex-flow: column;
+    background-color: var(--white);
+    box-shadow: .2px .2px 5px var(--charcola);
+}
+
+h1 {
+    /* background-color: red; */
+}
+
+#input {
+    /* background-color: yellow; */
+    padding-bottom: 6px;
+} #input textarea:focus {
+    outline: none;
+} #input button:active {
+    transform: scale(.99);
+}
+
+#output {
+    /* background-color: aqua; */
+}
+
+#info {
+    padding-top: 1rem !important;
+    /* background-color: blueviolet; */
+}
+
+
+button { 
+    background-color: var(--gold);
+}
+
+#messageCont {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.hidden {
+    display: none;
+}
