@@ -25,12 +25,34 @@ h1 {
     padding-bottom: 6px;
 } #input textarea:focus {
     outline: none;
-} #input button:active {
+} #input button:active, 
+  #close:active {
     transform: scale(.99);
 }
 
 #output {
     /* background-color: aqua; */
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+p {
+    display: inline-block;
+}
+
+li {
+    list-style: none;
+    
+}
+
+.unpair {
+    background: var(--charcola);
+} .pair {
+    background: var(--dark-aqua);
 }
 
 #info {
@@ -52,5 +74,5 @@ button {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
