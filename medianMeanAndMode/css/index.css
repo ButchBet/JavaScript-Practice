@@ -25,7 +25,8 @@ h1 {
     padding-bottom: 6px;
 } #input textarea:focus {
     outline: none;
-} #input button:active {
+} #input button:active, 
+  #close:active {
     transform: scale(.99);
 }
 
@@ -34,6 +35,9 @@ h1 {
     padding-left: 0 !important;
     padding-right: 0 !important;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 p {
@@ -70,5 +74,5 @@ button {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
