@@ -144,6 +144,11 @@ btn_add_delete.addEventListener("click", () => {
     } else {
         ShowMessage(name, salary, false, message);
     }
+
+    // Change salary and name to ""
+    name.value = "";
+
+    salary.value = "";
 });
 
 // Event to exit the panel of the result 
@@ -171,13 +176,8 @@ median.addEventListener("click", () => {
 
     // Check if total numbers is pair or unpair
     if(totalNumbers % 2 === 0) { // addtion between the two of the midel and then divide the result in 2
-        console.log(salaries[totalNumbers / 2], salaries[totalNumbers / 2 - 1]);
-        console.log(salaries);
-
         median = (salaries[totalNumbers / 2] + salaries[totalNumbers / 2 - 1])/2;
     } else { // Get the midel one
-        console.log(salaries);
-
         median = salaries[Math.floor(totalNumbers / 2)]; 
     }
 
@@ -201,30 +201,44 @@ top10.addEventListener("click", () => {
     const totalNumbers = salaries.length;
 
     // The 10% of the length
-    const tenPorcent = totalNumbers * 0.1; // 1.4
+    const tenPorcent = totalNumbers * 0.1; // 1.4 | 2
 
-    // Check if it's a float to get the floor, ceil and the remainder of the tenPorcent
-    let roundFloor = 0; 
+    // Get the floor, ceil and the remainder of the tenPorcent
+    let roundFloor = Math.floor(tenPorcent); // 2 | 2
 
-    let roundCeil = 0;
+    let roundCeil = Math.ceil(tenPorcent); // 1 | 2
     
-    let remainder = 0;
+    let remainder = tenPorcent - roundFloor; // 0.4 | 0
+    
+    // Get the biggest salaries
+    let topTenSalaries = [];
 
-    if(!tenPorcent % 1 === 0) {
-        roundCeil = Math.ceil(tenPorcent); // 2
-
-        roundFloor = Math.floor(tenPorcent); // 1
-
-        remainder = tenPorcent - roundFloor; // 0.4
+    for(let i = totalNumbers - roundCeil - 1; i < totalNumbers; i++) {
+        topTenSalaries.push(salaries[i]);
     }
 
-    // Get he biggest salaries
-    for(let i = )
+    // Sort the topTenSalaries decendengli
+    topTenSalaries.sort((a,b) => {
+        return b - a;
+    });
+
+    // Differ the entire cases and the floar ones, also get the topTenSalary 
+    let topTenSalary = 0;
+
+    topTenSalaries.forEach((e, i) => {
+        if(remainder > 0 && i === (topTenSalaries.length - 1)) {
+            topTenSalary += (e * remainder);
+        } else {
+            topTenSalary += e;
+        }
+    });
+
+    result.innerHTML = `The top 10% of the salaries is: ${topTenSalary}.`;
 
     output.classList.remove("hidden");
 });
 
 // Event to prove other things
-prove.addEventListener("click", () => {
-    console.log(colombia);
-});
+// prove.addEventListener("click", () => {
+//     console.log(colombia);
+// });
