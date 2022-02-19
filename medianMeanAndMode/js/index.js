@@ -63,7 +63,7 @@ open.addEventListener("click", (e) => {
 
         // Check if total numbers is pair or umpair
         if(totalNumbers % 2 === 0) { // addtion between the two of the midel and then divide the result in 2
-            median = (numbers[totalNumbers / 2] + numbers[totalNumbers / 2 + 1])/2;
+            median = (numbers[totalNumbers / 2] + numbers[totalNumbers / 2 - 1])/2;
         } else { // Get the midel one
             median = numbers[Math.floor(totalNumbers / 2)]; 
         }
