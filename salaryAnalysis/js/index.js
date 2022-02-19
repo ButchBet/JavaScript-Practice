@@ -192,6 +192,35 @@ top10.addEventListener("click", () => {
         return element["salary"];
     });
 
+    // Sort the list
+    salaries.sort((a, b) => {
+        return a - b; 
+    });
+
+    // Total of salaries
+    const totalNumbers = salaries.length;
+
+    // The 10% of the length
+    const tenPorcent = totalNumbers * 0.1; // 1.4
+
+    // Check if it's a float to get the floor, ceil and the remainder of the tenPorcent
+    let roundFloor = 0; 
+
+    let roundCeil = 0;
+    
+    let remainder = 0;
+
+    if(!tenPorcent % 1 === 0) {
+        roundCeil = Math.ceil(tenPorcent); // 2
+
+        roundFloor = Math.floor(tenPorcent); // 1
+
+        remainder = tenPorcent - roundFloor; // 0.4
+    }
+
+    // Get he biggest salaries
+    for(let i = )
+
     output.classList.remove("hidden");
 });
 
