@@ -17,3 +17,9 @@
 - 2th step: Implement formulas in JS.
 - 3th step: Create functions.
 - 4th step: Intefrate JS with HTML.
+
+## Task number 4: median and top10% of salaries
+- 1th step: Define the formulas.
+- 2th step: Implement formulas in JS.
+- 3th step: Create functions.
+- 4th step: Intefrate JS with HTML.
