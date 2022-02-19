@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    --midnight-blue: #1e1f26;
+    --indigo-ink: #283655;
+    --blueberry: #4d648d;
+    --periwinkle: #d0e1f9;
+
+    background-color: var(--periwinkle) !important;
+}
+
+#main {
+    background-color: var(--blueberry);
+    position: relative;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+h1 {
+    background-color: var(--indigo-ink);
+    text-align: center;
+    color: var(--periwinkle);
+}
+
+#input {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#change {
+} #input img {
+    height: 20px;
+}
+
+#message {
+    text-align: center;
+    background-color: inherit;
+}
+
+#choose {
+    margin-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+#output {
+    padding: 0;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;    
+    height: 100%;
+    box-shadow: .2px .2px 5px black;
+    background-color: white;
+}
+
+#top {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    height: 18%;
+}
+
+#exit {
+    width: 40px;
+    height: 100%;
+    border-radius: 0;
+    background-color: red;
+    border: 0px;
+}
+
+#result {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    height: 82%;
+}
+
+.hidden {
+    display: none;
+}
