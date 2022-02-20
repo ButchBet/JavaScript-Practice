@@ -7,8 +7,8 @@ body {
     --yellow-js: #F6DF1C;
     --light-skin: #D9CB9E;
     --light-grey-blue: #374140;
-    --dark-grey: #2A2C2B;
-    --light-grey: #BDC3C7;
+    --dark-grey: #000000;
+    --light-grey: #ffffff;
 
     background-color: var(--dark-grey) !important;
 
@@ -18,7 +18,10 @@ body {
 header {
     position: relative;
     top: 1rem;
-    background-color: red;
+} header:hover {
+    background-color: var(--yellow-js);
+    color: var(--dark-grey);
+    border: 2px solid var(--dark-grey);
 }
 
 nav {
@@ -68,7 +71,20 @@ nav ul li img {
 main {
     position: relative;
     top: 2rem;
-    background-color: aqua;
-    box-shadow: .2px .2px 1px white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    align-content: stretch;
+    background-color: white;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    border: 1px solid white;
+} main a:hover {
+    color: var(--dark-grey);
+    background-color: var(--yellow-js);
+    border: 2px solid var(--dark-grey);
 }
 
