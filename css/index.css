@@ -10,12 +10,14 @@ body {
     --dark-grey: #2A2C2B;
     --light-grey: #BDC3C7;
 
-    background-color: var(--light-grey) !important;
+    background-color: var(--dark-grey) !important;
 
     font-family: monospace !important;
 }
 
 header {
+    position: relative;
+    top: 1rem;
     background-color: red;
 }
 
@@ -27,12 +29,14 @@ nav ul {
     list-style: none;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     align-content: center;
 }
 
 nav ul li {
+    text-align: center;
+    height: 80%;
 }
 
 nav ul li a {
@@ -46,21 +50,25 @@ nav ul li a {
 }
 
 nav ul li img {
-    height: 80px;
+    height: 65px;
 }
 
 #jsLogo {
     border-radius: 100% !important;
-    margin-left: 1rem;
 }
 
 #containerPlatziLogo {
-    background-color: #374140;
-    margin-right: 1rem;
 }
 
 #platziLogo {
-    height: 40px !important;
-    width: 100px !important;
+    height: 30px !important;
+    width: 105x !important;
+}
+
+main {
+    position: relative;
+    top: 2rem;
+    background-color: aqua;
+    box-shadow: .2px .2px 1px white;
 }
 
