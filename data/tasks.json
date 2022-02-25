@@ -1,0 +1,29 @@
+{
+    "shapes" :{
+        "name" : "Grometric shapes.",
+        "description": "This is a project where we search to find the area and perimeter of the circle, square and triangle.",
+        "img": "../assets/circle.png",
+        "route": "../geometricShapes/index.html"
+    },
+
+    "statistics" :{
+        "name" : "Mean, median and mode.",
+        "description": "This is a project where we search to apply the statistics knowledge when use the median, mean and mode.",
+        "img": "../assets/discount.png",
+        "route": "../medianMeanAndMode/index.html"
+    },
+
+    "salary" :{
+        "name" : "Analysis of salary.",
+        "description": "This is a project where we search to use some arithmetic calcs to get the median and the top 10% of the salaries.",
+        "img": "../assets/dollar.png",
+        "route": "../salaryAnalysis/index.html"
+    },
+
+    "discount" :{
+        "name" : "Percentages and discount.",
+        "description": "This is a project where we search use replicate an E-comerce and using some arithmetics we try to apply the discount in some products.",
+        "img": "../assets/price.png",
+        "route": "../percentagesAndDiscounts"
+    }
+}
