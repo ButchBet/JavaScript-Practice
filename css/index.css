@@ -1,0 +1,117 @@
+* {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+body {
+    --yellow-js: #F6DF1C;
+    --light-skin: #D9CB9E;
+    --light-grey-blue: #374140;
+    --dark-grey: #000000;
+    --light-grey: #ffffff;
+
+    background-color: var(--dark-grey) !important;
+
+    font-family: monospace !important;
+}
+
+header {
+    position: relative;
+    top: 1rem;
+} header:hover {
+    background-color: var(--yellow-js);
+    color: var(--dark-grey);
+    border: 2px solid var(--dark-grey);
+}
+
+nav {
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+}
+
+nav ul li {
+    text-align: center;
+    height: 80%;
+}
+
+nav ul li a {
+    height: 100%;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+} nav ul li a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+nav ul li img {
+    height: 65px;
+}
+
+#jsLogo {
+    border-radius: 100% !important;
+}
+
+#containerPlatziLogo {
+}
+
+#platziLogo {
+    height: 30px !important;
+    width: 105x !important;
+}
+
+main {
+    position: relative;
+    top: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    align-content: stretch;
+    background-color: white;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--dark-grey);
+    border: 1px solid white;
+} main a:hover {
+    color: var(--dark-grey);
+    background-color: var(--yellow-js);
+    border: 2px solid var(--dark-grey);
+}
+
+footer {
+    position: relative;
+    top: 2.5rem;
+    color: var(--dark-grey);
+    background-color: var(--yellow-js);
+}
+
+.phrase {
+    text-align: center;
+}
+
+.space {
+}
+
+.checking {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.checking img {
+    cursor: pointer;
+}
+
+.checking img:active {
+    transform: scale(.9);
+}

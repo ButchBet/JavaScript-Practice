@@ -61,10 +61,10 @@ class ProductRow extends HTMLElement {
         };
 
         // Create the file reference
-        const fileReference = `../data/${this.id}.json`;
+        const fileReference = `data/${this.id}.json`;
 
         // Opan de items file
-        fetch("../data/items.json", option)
+        fetch("data/items.json", option)
         .then(response => response.json())
         .then(response => {
             // Save the array of items refered to the category 
