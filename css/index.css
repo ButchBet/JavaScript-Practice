@@ -88,3 +88,30 @@ main a {
     border: 2px solid var(--dark-grey);
 }
 
+footer {
+    position: relative;
+    top: 2.5rem;
+    color: var(--dark-grey);
+    background-color: var(--yellow-js);
+}
+
+.phrase {
+    text-align: center;
+}
+
+.space {
+}
+
+.checking {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.checking img {
+    cursor: pointer;
+}
+
+.checking img:active {
+    transform: scale(.9);
+}
