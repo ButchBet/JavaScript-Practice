@@ -51,7 +51,7 @@ class Addvertisement extends HTMLElement {
 
         // Create an interval to can go thought the array of images and show every image every 5 seconds
         setInterval(() => {
-            console.log(this.index);
+            // console.log(this.index);
             this.image = this.images[this.index];
             this.imageAlt = this.imagesAlt[this.index];
             this.imageTitle = this.imagesTitle[this.index];
@@ -72,7 +72,7 @@ class Addvertisement extends HTMLElement {
         this.shadowRoot.innerHTML = `
             <style>${Addvertisement.styles}</style>
             <section class="">
-                <img src="../assets/${this.image}" alt="${this.imageAlt}" title="${this.imageTitle}">
+                <img src="assets/${this.image}" alt="${this.imageAlt}" title="${this.imageTitle}">
             </section>
         `;
     }

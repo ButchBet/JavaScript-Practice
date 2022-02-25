@@ -164,7 +164,7 @@ class Header extends HTMLElement {
 
             <header class="container-fluid row">
                 <div id="logo" class="col-sm-2 d-flex flex-row flex-wrap justify-content-center align-content-center">
-                <img src="../assets/logo3.png" alt="Logo image of bug" title="crucks.com">
+                <img src="assets/logo3.png" alt="Logo image of bug" title="crucks.com" id="pic">
                 </div>
                 
                 <div id="category" class="col-sm-9 row d-flex flex-row flex-wrap align-content-end">
@@ -186,7 +186,7 @@ class Header extends HTMLElement {
                         </div>
 
                         <div class="d-flex flex-row flex-wrap justify-content-center align-content-center arrowDown">
-                            <img src="../assets/arrow-down.png">
+                            <img src="assets/arrow-down.png">
                         </div>
 
                     </div>
@@ -197,7 +197,7 @@ class Header extends HTMLElement {
                         </div>
 
                         <div class="d-flex flex-row flex-wrap justify-content-center align-content-center arrowDown">
-                            <img src="../assets/arrow-down.png">
+                            <img src="assets/arrow-down.png">
                         </div>
 
                     </div>
@@ -208,7 +208,7 @@ class Header extends HTMLElement {
                         </div>
 
                         <div class="d-flex flex-row flex-wrap justify-content-center align-content-center arrowDown">
-                            <img src="../assets/arrow-down.png">
+                            <img src="assets/arrow-down.png">
                         </div>
 
                     </div>
@@ -219,14 +219,14 @@ class Header extends HTMLElement {
                         </div>
                         
                         <div class="d-flex flex-row flex-wrap justify-content-center align-content-center arrowDown">
-                            <img src="../assets/arrow-down.png">
+                            <img src="assets/arrow-down.png">
                         </div>
 
                     </div>
                 </div>
 
                 <div id="auth-search" class="col-sm-1 d-flex flex-row flex-wrap justify-content-center align-content-center">
-                    <img title="Account and settings" src="../assets/account.png" alt="Acount image">
+                    <img title="Account and settings" src="assets/account.png" alt="Acount image">
                 </div>
             </header>
         `;
