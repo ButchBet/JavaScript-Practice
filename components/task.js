@@ -35,7 +35,7 @@ class Task extends HTMLElement {
             method: "GET"
         }
 
-        fetch("./../data/tasks.json", option)
+        fetch("../data/tasks.json", option)
         .then((response) => response.json())
         .then((file) => {
             // Get the data using the id
