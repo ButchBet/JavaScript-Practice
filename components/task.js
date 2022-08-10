@@ -35,7 +35,7 @@ class Task extends HTMLElement {
             method: "GET"
         }
 
-        fetch("../data/tasks.json", option)
+        fetch("data/tasks.json", option)
         .then((response) => response.json())
         .then((file) => {
             // Get the data using the id
@@ -59,7 +59,7 @@ class Task extends HTMLElement {
             <style>${Task.styles}</style>
             
             <section id="image">
-                <img src="${this.image}"
+                <img src="${this.image}">
                 <h1>${this.title}<h1>
             </section>
 
