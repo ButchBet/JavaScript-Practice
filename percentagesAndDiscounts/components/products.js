@@ -28,7 +28,7 @@ class Products extends HTMLElement {
             main {
                 height: 100%;
                 display: flex;
-                flex-flow: column;
+                flex-flow: column ;
                 align-items: center;
             }
 
@@ -52,6 +52,7 @@ class Products extends HTMLElement {
                 width: 100%;
                 display: flex;
                 flex-flow: row wrap;
+                justify-content: center;
             }
 
             .hidden {

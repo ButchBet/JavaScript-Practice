@@ -14,6 +14,7 @@ class ProductRow extends HTMLElement {
                 display: flex;
                 position: relative;
                 width: 100%;
+                justify-content: center;
             }
 
             .category {
