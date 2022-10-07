@@ -1,22 +1,19 @@
-body {
+:root {
     --mist : #90AFC5;
     --stone : #336B87;
     --shadow : #2A3132;
     --autumn-follage : #763626;
-
-    color: black !important;
-    background-color: var(--mist) !important;
-    text-align: justify !important;
-    height: 100vh;
 }
 
-#mainCont {
-    height: 40rem;
-    max-height: 100rem;
-    max-width: 60rem;
+body {
+    color: black !important;
+    background: var(--mist) !important;
+    text-align: justify !important;
+    overflow: scroll;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
 }
+
 

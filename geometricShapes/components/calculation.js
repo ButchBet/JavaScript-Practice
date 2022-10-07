@@ -60,10 +60,6 @@ class Calculation extends HTMLElement {
             nav {
                 margin-bottom: 10px;
             }
-
-            #change {
-                height: 6em !important;
-            }
         `;
     }
 
@@ -144,7 +140,7 @@ class Calculation extends HTMLElement {
 
             <header class="text-center">
                     <h1>Geometric Shapes</h1>
-                </header>
+            </header>
             
 
             <nav class="row mx-0">
