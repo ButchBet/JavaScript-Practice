@@ -1,25 +1,33 @@
-# JavaScript-Practice
+# JavaScriptPractice
 
-## Task number 1: Geometric shapes.
-- 1th step: Define formulas.
-- 2th step: Implement formulas in JS.
-- 3th step: Create functions.
-- 4th step: Integrate Js with HTML.
+## Table of contents
 
-## Task number 2: percentages and discounts
-- 1th step: Define formulas.
-- 2th step: Implement formulas in JS.
-- 3th step: Create functions.
-- 4th step: Integrate Js with HTML.
+- [Overview](#overview)
+- [Screenshots](#screenshots)
+- [Links](#links)
+- [Built with](#built-with)
+- [Author](#author)
 
-## Task number 3: median, mean and mode
-- 1th step: Define the formulas.
-- 2th step: Implement formulas in JS.
-- 3th step: Create functions.
-- 4th step: Intefrate JS with HTML.
 
-## Task number 4: median and top10% of salaries
-- 1th step: Define the formulas.
-- 2th step: Implement formulas in JS.
-- 3th step: Create functions.
-- 4th step: Intefrate JS with HTML.
+## Overview
+This project was created in order to put in practice my knowledge of JavaScript webcomponents.
+
+## Screenshots
+![Mobile](./assets/mobileMain.png)
+![Desktop](./assets/desktopMain.png)
+
+## Links
+- Solution URL: [GitHub](https://github.com/ButchBet/JavaScript-Practice)
+- Live Site URL: [JavaScript practice](https://butchbet.github.io/JavaScript-Practice/)
+
+## Built with
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- JS vanilla
+- Webcomponents
+
+## Author
+- Website - [Butchbet](https://www.butchbet.co/)
+- Twitter - [@JustButchBet](https://twitter.com/JustButchBet)
