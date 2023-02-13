@@ -2,14 +2,9 @@
 
 ## Table of contents
 
-- [Overview](#overview)
 - [Links](#links)
 - [Built with](#built-with)
 - [Author](#author)
-
-
-## Overview
-This project was created in order to put in practice my knowledge of JavaScript webcomponents.
 
 ## Links
 - Solution URL: [GitHub](https://github.com/ButchBet/JavaScript-Practice)
